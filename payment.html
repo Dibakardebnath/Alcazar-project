@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment Checkout Form</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="./payment.css">
+
+	<style>
+		.error {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+
+
+
+<div class="wrapper">
+  <div class="payment">
+    <div class="payment-logo">
+      <p>p</p>
+    </div>
+    
+    
+    <h2>Payment Gateway</h2>
+    <div class="form">
+      <div class="card space icon-relative">
+        <label class="label">Card holder:</label>
+        <input type="text" class="input" id="card-holder" placeholder="Card Holder Name">
+        <i class="fas fa-user"></i>
+        
+      </div>
+      <span id="card-holder-error" class="error"></span>
+      <div class="card space icon-relative">
+        <label class="label">Card number:</label>
+        <input type="text" class="input" id="card-number" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+        <i class="far fa-credit-card"></i>
+        
+      </div>
+      <span id="card-number-error" class="error"></span>
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label">Expiry date:</label>
+          <input type="text" name="expiry-data" class="input" id="expiry-date" data-mask="00 / 00"  placeholder="00 / 00">
+          <!-- <i class="far fa-calendar-alt"></i> -->
+          <span id="expiry-date-error" class="error"></span>
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label">CVC:</label>
+          <input type="text" class="input" id="cvc" data-mask="000" placeholder="000">
+          <!-- <i class="fas fa-lock"></i> -->
+          <span id="cvc-error" class="error"></span>
+        </div>
+      </div>
+        
+      <div class="btn" id="pay-btn">
+        Pay
+      </div> 
+      
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script>
+	// Function to clear all error messages
+	function clearErrors() {
+		$(".error").text("");
+	}
+
+	// Function to display an error message
+	function displayError(elementId, message) {
+		$("#" + elementId).text(message);
+	}
+
+	// Function to validate the form
+	function validateForm() {
+		// Clear previous error messages
+		clearErrors();
+
+		// Fetch form input values
+		var cardHolder = $("#card-holder").val();
+		var cardNumber = $("#card-number").val();
+		var expiryDate = $("#expiry-date").val();
+		var cvc = $("#cvc").val();
+
+		// Validate form inputs
+		var isValid = true;
+
+		
+
+
+if (cardHolder === "") {
+			displayError("card-holder-error", "Card holder name is required.");
+			isValid = false;
+		}
+
+		if (cardNumber === "") {
+			displayError("card-number-error", "Card number is required.");
+			isValid = false;
+		} else if (!$("#card-number").inputmask("isComplete")) {
+			displayError("card-number-error", "Please enter a valid card number.");
+			isValid = false;
+		}
+
+		if (expiryDate === "") {
+			displayError("expiry-date-error", "Expiry date is required.");
+			isValid = false;
+		} else if (!$("#expiry-date").inputmask("isComplete")) {
+			displayError("expiry-date-error", "Please enter a valid expiry date.");
+			isValid = false;
+		}
+
+		if (cvc === "") {
+			displayError("cvc-error", "CVC is required.");
+			isValid = false;
+		} else if (!$("#cvc").inputmask("isComplete")) {
+			displayError("cvc-error", "Please enter a valid CVC.");
+			isValid = false;
+		}
+
+		return isValid;
+	}
+
+	// Validate the form on Pay button click
+	$("#pay-btn").click(function() {
+		if (validateForm()) {
+			// Form is valid, perform further actions (e.g., submit the form)
+			alert("Form is valid. Submitting...");
+		} else {
+			// Form is not valid, prevent further actions
+			alert("Please fill in the required fields correctly.");
+		}
+	});
+
+	// Initialize input masks
+	$("#card-number").inputmask("9999 9999 9999 9999");
+	$("#expiry-date").inputmask("99 / 99");
+	$("#cvc").inputmask("999");
+
+</script>
+</body>
+</html>
