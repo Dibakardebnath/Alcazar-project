@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'poppins','sans-serif';
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+   background-size: cover;
+   background-position: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+}
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+.nav-link li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-link li a{
+    text-decoration: none;
+    color: #fff;
+}
+.Register{
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.container{
+    padding: 0 7%;
+}
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding-top: 22%;
+}
+.header p{
+    font-size: 2vw;
+    font-weight: 0px;
+    color: #fff;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.search-bar{
+    background: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.search-bar form button{
+    background: #fff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.search-bar form button img{
+    width: 35px;
+    margin-top: 7px;
+}
+.location-input{
+    flex: 1;
+}
+.search-bar form label{
+    font-weight: 600;
+}
+
+/* .........................image................................ */
+/* #container{
+   
+   
+} */
+#firstDiv{
+    /* border: 1px solid; */
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#firstDiv h1+p{
+    margin-top: 20px;
+    color: #abafbd;
+}
+#secondDiv{
+    /* border: 1px solid; */
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+#btn1{
+    background-color: #1ca0e3;
+}
+#secondDiv  button{
+    /* border-inline: rgb(224, 26, 26); */
+    border-radius: 30px;
+    padding: 2%;
+    color: #a7afc1;
+    background-color: #ffffff;
+    
+       
+}
+
+/* ..........................image counter................................. */
+#image-counter{
+    /* border: 1px solid; */
+    /* padding: 0; */
+    padding-left:70px;
+    padding-right: -10px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    /* justify-content: space-evenly; */
+
+}
+.heading{
+    
+    display: flex;
+    margin-left: 10px;
+    gap: 80px;
+}
+
+#image1 img{
+    border-radius: 20px;
+}
+hr{
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#text{
+    border: 1px solid;
+    width: 255px;
+}
+#text p{
+    line-height: 1.5em;
+    height: 3em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* width: f; */
+}
+/* ..............................................allbtn...................... */
+#Allbtn{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+#Allbtn2{
+    /* border: 1px solid; */
+    width: 40%;
+    display: flex;
+   justify-content: space-evenly;
+   
+}
+#Allbtn2 button{
+    width: 100px;
+    height: 5vh;
+   
+}
+#back{
+ margin-left: 90px;
+ width: 100px;
+ height: 5vh;
+
+}
+#next{
+    margin-right: 100px;
+    width: 100px;
+ height: 5vh;
+}
+/* ....................................animi................................... */
+#animation{
+      /* border: 1px solid; */
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 90%;
+      margin-left: 80px;
+      gap: 50px;
+}
+
+/* ...........................................last-div......................... */
+#satis{
+    margin-top: 50px;
+    text-align: center;
+}
+#last-div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 50px;
+    gap: 50px;
+}
+#last-div2{
+    display: flex;
+    gap: 10px;
+}
+/* ..................................footere............ */
+
+#footer{
+border: 1px solid;
+margin-top: 50px;
+/* display: flex; */
+}
+#footer1{
+    display: flex;
+    margin-top: 80px;
+}
+#footer2{
+    border: 1px solid;
+         
+   width: 500px;
+   display: flex;
+   justify-content: space-evenly;
+    margin-left: 300px;
+    margin-top: 40px;
+}

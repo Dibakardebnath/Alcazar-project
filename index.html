@@ -5,11 +5,347 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>
-        Home
-    </h1>
-    
+   <div class="header">
+
+       <nav>
+        <img src="https://cdn.dribbble.com/users/102622/screenshots/8197800/media/a3618bdf922aafba27cefc4d13625342.jpg?compress=1&resize=400x300" class="logo">
+         <ul class="nav-link">
+            <li><a href="#">Download App</a></li>
+            <li><a href="#">Partner With Us</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Saved</a></li>
+            <li><a href="#">My Booking</a></li>
+         </ul>
+         <a href="#" class="Register">Register Now</a>
+    </nav>
+    <div class="container">
+        <h1>Travel Around The World</h1>
+        <!-- <p>Trusted by 80 million Travelers. Alcazar is the world's most
+             comprehensive tavel, flight and accommodation provider.
+              very easy to access on your smarttree and desktop</p> -->
+        <div class="search-bar">
+            <form>
+                <div class="location-input">
+                    <label>Location</label>
+                    <input type="text" placeholder="Ciyt,destination, or hotel name">
+                </div>
+               
+                <div>
+                    <label>Check in</label>
+                    <input type="text" placeholder="Add date">
+                </div>
+                
+                <div>
+                    <label>Guest</label>
+                    <input type="text" placeholder="Add Gust">
+                </div>
+                <button type="submit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB9CAMAAABTaScUAAAAY1BMVEX///8AAADx8fH8/Pz19fWjo6Pu7u6oqKjb29uHh4fX19d2dnbBwcGzs7O7u7vp6ekODg4UFBQgICCbm5sZGRlpaWlSUlLIyMhMTEw5OTmQkJAlJSVdXV0zMzNFRUXR0dF+fn4hovx0AAAE9UlEQVRogcVb24LiIAztXVrbYqtVe/f/v3J1Zt1xTQLhUuc8g6cEOElIDAIuMlGnQ7eMTRiGh7af8mNVSPZsF8SyvPWnEKKZ97WItyWXu2lEqJ9oz4Pc7AviulNQPzFVyRbk0fHAIP9C7v0cyJzL/YW98EkeHVU7jqHxaIGyNyR/4FT5OYTR3oL8gcnHDtSNJfsdqSt5fLMnv6OLnNizsxN7GC4uG1DMjuz3E1has1/YQqPCzpK99kEe2h7A0hO7Hf+F9cu87TG3f6G57n031OVaFMV6KY/7RcNfG7JnqjPf3OrsfXw5KN1CYcQeK+57dyHEfL3RW9EY6Q+pdYdcpSPy2JIfbeCAyEOv9eMypyxwZLNnWCh5x3xhTBbUvq1ceiKky5nTU3z6wowBcbU78MVb4JeAZ/4IjW1GE9cl0Q1oWPHXEZvam4Vu0YT9SMeYiZ67+V1mdMCFg2FBLKI2Zr/jivzOpJ2VWX41QIKdP+3lw3beLmBZEae118yJkZ2/WbHj919zgpE731uyo/I1KCfEyAy2WAJIqP+9UvqkP9M/gJhf6TZ2YPjBJVVETtJNNR6KFdfP4IDLaRV+X8K76pYlBdD6iqMEwwzdRdVhAL+o8HtQcDkBhgoCaM+ZHgxdrSN7EEDXQw6Fzu7mTA/vHhlzF2CofXr6hAC/SaYcQHFb9/ehBCRApO4CQ12d2YMAvAyRlwncEtdr9wDw4BMlPMDfOD8NBYiWjJTXAdtk7+x+AL0YJaRAcs3yUhwRmx64Zx/vgnz693EHH/QJWBSXnpeW6OiBlFJR+y+v/pf3HjxNfPbkA3/72XsPIr1NVK+lVA8EO5to/pnSfODxFIERG+CRjFxT9T5ytEis35CARJsM3WG04xppYtFORQ2VICxVZ4QcAIsqrhO4ea0zPcyb6DQHlsxchUcCKVPk6zC7d0vxsDhbsZ/wW0PHcjTM8BWnGXkOcxM+aM6TKmeFD0ujU4oLszbl2xq8pU53D3kpUpZVsMdIe6cfwecCzQMlVAkH4UdqIpqblMAZ1qcPe5jXmRJ70rUzP/JSQydY/yYh9K2V48Nqe/qEHetVuFqID1aRYWTMAitFaY0GgHa6cPw3WsPrzNYfo+ys5wJE+O84m6hfgneb8AJnvBA2889/hlUyeKWcgC7gcsvgJVGF5P4Aovzfn88xQKbodSHDvP9B1CHDU6o9gZWyw4nJj5bhHuh3yitY6hptePwR3T1wGqisP0sZvV28/S9UTRnntAA2EBWnl5DNr+lbWbq0XGX2gCzKqlv4nV08+yOe/x3tPPfzPJo2F/H40VKyF/w2Py+AgYUgX+CdP19dWxA8+69eetbs+WE1wBeY/mezA8gMoAtbA+haHZnrj8lOJCX2UndzmP4vEEw9f8HyiKx88QcF6YJx8r8BvU65+X2ERcfeguknm9Ct36CPUeScXu15v756Y2/2vyMp92RD3heaqXpPyHT8Zn2U8WWgAqprXmKhoM/1f3+C2A3dtX8a4jQvU56uZBDocf9fviHJpBCFEFImsToF3ITfAN7t75nftI/XFDr92Xr9/vTPDr9tfw3/uDG9jn9revX+L5vTK9fvo2Zoz9+4F81c+D+xeJqf+ezkDvT8kYVV/0DWb/No64//o+yAf3HsiDTGf/vP/dvANvznz7O/2N/wqdwXvh9OTx9SG4h6DK+7V6X9A/E7O57v+iWCAAAAAElFTkSuQmCC" alt=""></button>
+            </form>
+        </div>
+    </div>
+   </div>
+   <div class="container">
+
+    <div id="firstDiv">
+        <h1>Guides for your next vaction</h1>
+        <p>Check out this weeks selectin of popular products that might catch your eye. and don't</p>
+
+    </div>
+    <div id="secondDiv">
+        <button id="btn1">All</button>
+        <button id="btn2">Trending</button>
+        <button id="btn3">Popular</button>
+        <button id="btn4">Features</button>
+        <button id="btn5">Recommend</button>
+        <button id="btn6">Tour packages</button>
+       
+    </div>
+
+    <div id="image-counter">
+        <div id="image1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYKkcIZhkiBtfaoHnUs9APHePP6W8ari18ScbKIkxGiw&usqp=CAU&ec=48665699" alt="">
+            <div class="heading">
+                <h4>welcome to urope</h4>
+                <h4>$66.99</h4>
+            </div>
+            <hr>
+            <div>
+                <!-- <p>There are grammar debates that never die; and the one
+                    s highlighted in the questions in th
+                    is quiz are sure to rile everyone up once again. 
+                    Do you know how to answer the questions that cause some of the greatest grammar debates?</p> -->
+            </div>
+        </div>
+           
+        <div id="image1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYKkcIZhkiBtfaoHnUs9APHePP6W8ari18ScbKIkxGiw&usqp=CAU&ec=48665699" alt="">
+            <div class="heading">
+                <h4>welcome to urope</h4>
+                <h4>$66.99</h4>
+            </div>
+            <hr>
+        </div>
+
+        <div id="image1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYKkcIZhkiBtfaoHnUs9APHePP6W8ari18ScbKIkxGiw&usqp=CAU&ec=48665699" alt="">
+            <div class="heading">
+                <h4>welcome to urope</h4>
+                <h4>$66.99</h4>
+            </div>
+            <hr>
+        </div>
+
+        <div id="image1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYKkcIZhkiBtfaoHnUs9APHePP6W8ari18ScbKIkxGiw&usqp=CAU&ec=48665699" alt="">
+            <div class="heading">
+                <h4>welcome to urope</h4>
+                <h4>$66.99</h4>
+            </div>
+            <hr>
+        </div>
+
+        <div id="image1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYKkcIZhkiBtfaoHnUs9APHePP6W8ari18ScbKIkxGiw&usqp=CAU&ec=48665699" alt="">
+            <div class="heading">
+                <h4>welcome to urope</h4>
+                <h4>$66.99</h4>
+            </div>
+            <hr>
+        </div>
+
+        <div id="image1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYKkcIZhkiBtfaoHnUs9APHePP6W8ari18ScbKIkxGiw&usqp=CAU&ec=48665699" alt="">
+            <div class="heading">
+                <h4>welcome to urope</h4>
+                <h4>$66.99</h4>
+            </div>
+            <hr>
+        </div>
+ 
+    </div>
+                                                <!--button  -->
+    <div id="Allbtn">
+        <button id="back">Back Page</button>
+        <div id="Allbtn2">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+        </div>
+        <button id="next">Next Page</button>
+    </div>
+ <!--.............................................. anitmation...........................-->
+
+         <div id="animation">
+
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHnu4Nnwz3Scvzi_fR9mHWvUAFjGc3Q4TTnGMmS5F1g&usqp=CAU&ec=48665699" alt="">
+            </div>
+
+            <div>
+                <h1>Safely Saved List</h1>
+                <p>Are you trying to copy text from a website that blocks y
+                    ou from selecting or right-clicking content? While it migh
+                    t seem impossible, there are several ways to copy text from any protected 
+                    website, even if you can't right-click the page. This wikiHow guide 
+                    </p>
+                    <button>Read More</button>
+            </div>
+
+          
+
+            <div>
+                <h1>Safely Saved List</h1>
+                <p>Are you trying to copy text from a website that blocks y
+                    ou from selecting or right-clicking content? While it migh
+                    t seem impossible, there are several ways to copy text from any protected 
+                    website, even if you can't right-click the page. This wikiHow guide 
+                    </p>
+                    <button>Read More</button>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHnu4Nnwz3Scvzi_fR9mHWvUAFjGc3Q4TTnGMmS5F1g&usqp=CAU&ec=48665699" alt="">
+            </div>
+  
+
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHnu4Nnwz3Scvzi_fR9mHWvUAFjGc3Q4TTnGMmS5F1g&usqp=CAU&ec=48665699" alt="">
+            </div>
+
+            <div>
+                <h1>Safely Saved List</h1>
+                <p>Are you trying to copy text from a website that blocks y
+                    ou from selecting or right-clicking content? While it migh
+                    t seem impossible, there are several ways to copy text from any protected 
+                    website, even if you can't right-click the page. This wikiHow guide 
+                    </p>
+                    <button>Read More</button>
+            </div>
+           
+            
+            <div>
+                <h1>Safely Saved List</h1>
+                <p>Are you trying to copy text from a website that blocks y
+                    ou from selecting or right-clicking content? While it migh
+                    t seem impossible, there are several ways to copy text from any protected 
+                    website, even if you can't right-click the page. This wikiHow guide 
+                    </p>
+                    <button>Read More</button>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHnu4Nnwz3Scvzi_fR9mHWvUAFjGc3Q4TTnGMmS5F1g&usqp=CAU&ec=48665699" alt="">
+            </div>
+          
+
+            
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHnu4Nnwz3Scvzi_fR9mHWvUAFjGc3Q4TTnGMmS5F1g&usqp=CAU&ec=48665699" alt="">
+            </div>
+
+            <div>
+                <h1>Safely Saved List</h1>
+                <p>Are you trying to copy text from a website that blocks y
+                    ou from selecting or right-clicking content? While it migh
+                    t seem impossible, there are several ways to copy text from any protected 
+                    website, even if you can't right-click the page. This wikiHow guide 
+                    </p>
+                    <button>Read More</button>
+            </div>
+           
+         </div> 
+         
+         <h1 id="satis">Satisfied Customers Are Our Best Ads</h1>
+
+         <div id="last-div">
+
+            <div id="last-div1">
+                <div id="last-div2">
+                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
+                     <div id="last-div3">
+                        <h2>Dibakar Debnath</h2>
+                        <p>Bloger Imidiatly</p>
+                     </div>
+                     <div id="last-div4">
+                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
+                         <p>3.4</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p>For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
+                    , we’re asking that you join us. Any amount that you can contribute </p>
+            </div>
+
+            <div id="last-div1">
+                <div id="last-div2">
+                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
+                     <div id="last-div3">
+                        <h2>Dibakar Debnath</h2>
+                        <p>Bloger Imidiatly</p>
+                     </div>
+                     <div id="last-div4">
+                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
+                         <p>3.4</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p>For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
+                    , we’re asking that you join us. Any amount that you can contribute </p>
+            </div>
+
+            <div id="last-div1">
+                <div id="last-div2">
+                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
+                     <div id="last-div3">
+                        <h2>Dibakar Debnath</h2>
+                        <p>Bloger Imidiatly</p>
+                     </div>
+                     <div id="last-div4">
+                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
+                         <p>3.4</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p>For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
+                    , we’re asking that you join us. Any amount that you can contribute </p>
+            </div>
+
+            <div id="last-div1">
+                <div id="last-div2">
+                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
+                     <div id="last-div3">
+                        <h2>Dibakar Debnath</h2>
+                        <p>Bloger Imidiatly</p>
+                     </div>
+                     <div id="last-div4">
+                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
+                         <p>3.4</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p>For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
+                    , we’re asking that you join us. Any amount that you can contribute </p>
+            </div>
+
+            <div id="last-div1">
+                <div id="last-div2">
+                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
+                     <div id="last-div3">
+                        <h2>Dibakar Debnath</h2>
+                        <p>Bloger Imidiatly</p>
+                     </div>
+                     <div id="last-div4">
+                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
+                         <p>3.4</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p>For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
+                    , we’re asking that you join us. Any amount that you can contribute </p>
+            </div>
+
+            <div id="last-div1">
+                <div id="last-div2">
+                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
+                     <div id="last-div3">
+                        <h2>Dibakar Debnath</h2>
+                        <p>Bloger Imidiatly</p>
+                     </div>
+                     <div id="last-div4">
+                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
+                         <p>3.4</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p>For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
+                    , we’re asking that you join us. Any amount that you can contribute </p>
+            </div>
+
+         </div>
+
+
+         <!-- ................................footer............................... -->
+         <footer id="footer">
+            <div id="footer1">
+                <img src="https://cdn.dribbble.com/users/102622/screenshots/8197800/media/a3618bdf922aafba27cefc4d13625342.jpg?compress=1&resize=400x300" class="logo" alt="">
+                <h3>Alcazar</h3>
+                <div id="footer2">
+                    <h3>About</h3>
+                    <h3>Product</h3>
+                    <h3>Social</h3>
+                </div>
+            </div>
+         </footer>
+   </div>
+   
 </body>
 </html>
