@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./background\ image.jpg");
    background-size: cover;
    background-position: center;
 }
@@ -16,7 +16,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 7%;
+    padding: 0px 7%;
 }
 .logo{
     width: 140px;
@@ -47,7 +47,23 @@ nav{
     font-weight: 500;
     color: #fff;
     text-align: center;
-    padding-top: 22%;
+    /* padding-top: 22%;/ */
+}
+#travel{
+    /* border: 1px solid; */
+    justify-content: center;
+    align-items: center;
+}
+
+#travel li{
+    text-align: center;
+    /* border: 1px solid; */
+    list-style: none;
+    width: 50%;
+    margin-left: 350px;
+    margin-top: 20px;
+    color: #d7f9fa;
+    
 }
 .header p{
     font-size: 2vw;
@@ -56,13 +72,19 @@ nav{
     text-align: center;
     padding-top: 1%;
 }
-
+/* .....................................search..................... */
+form>i{
+    color: #cc1c2c;
+}
 .search-bar{
     background: #fff;
     width: 70%;
-    margin: 30px auto;
+    margin: 110px 0px 30px 200px;
+    /* margin-bottom: 500px; */
+    /* margin-top: 20px; */
     padding: 6px 10px 6px 30px;
     border-radius: 50px;
+    
 }
 .search-bar form{
     display: flex;
@@ -85,6 +107,7 @@ nav{
     cursor: pointer;
 }
 .search-bar form button img{
+    /* background-color: #1ca0e3; */
     width: 35px;
     margin-top: 7px;
 }
@@ -94,7 +117,17 @@ nav{
 .search-bar form label{
     font-weight: 600;
 }
-
+#searchbtn{
+ border: 1px solid;
+ background-color: #1ca0e3;
+    width: 60px;
+    border: none;
+    color: white;
+}
+#searchbtn i{
+    /* width: 0px; */
+    font-size: 20px !important;
+}
 /* .........................image................................ */
 /* #container{
    
@@ -114,22 +147,20 @@ nav{
 #secondDiv{
     /* border: 1px solid; */
     margin-top: 30px;
-
+    margin-left: 73px;
+    /* margin-right: 100px; */
+     width: 85%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 #btn1{
     background-color: #1ca0e3;
-}
-#secondDiv  button{
-    /* border-inline: rgb(224, 26, 26); */
+
     border-radius: 30px;
     padding: 2%;
-    color: #a7afc1;
-    background-color: #ffffff;
-    
-       
 }
+
 
 /* ..........................image counter................................. */
 #image-counter{
@@ -178,16 +209,18 @@ hr{
   margin-top: 50px;
 }
 #Allbtn2{
-    /* border: 1px solid; */
+  
     width: 40%;
     display: flex;
    justify-content: space-evenly;
-   
+   gap: 10px;
+   border-radius: 30px;
+  
 }
 #Allbtn2 button{
     width: 100px;
-    height: 5vh;
-   
+    height: 6vh;
+   border-radius: 500px;
 }
 #back{
  margin-left: 90px;
@@ -201,6 +234,7 @@ hr{
  height: 5vh;
 }
 /* ....................................animi................................... */
+
 #animation{
       /* border: 1px solid; */
       margin-top: 50px;
@@ -210,39 +244,218 @@ hr{
       margin-left: 80px;
       gap: 50px;
 }
+#travel-img{
+    /* border: 1px solid; */
+    width: 80%;
+}
+#travel-img img{
+    width: 100%;
+}
+#read-div{
+    width: 460px;
+    padding: 20px 10px 10px 0px ;
+    /* border: 1px solid; */
+}
+#read-div>p{
+   margin-top: 20px;
+   margin-bottom: 30px;
+   color: #c1c6ce;
+}
+#readmore{
+    width: 90px;
+    height: 6vh;
+    border-radius: 30px;
+    background-color: #1ca0e3;
+    border: none;
+    color: white;
+}
+/* ............................. satisfied..................*/
+#satisfied{
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 80px;
+}
+#first{
+    transform: rotate(3.142rad);
+    width: 300px;
+    height: 100px;
+}
+#second{
+    
+    width: 300px;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
 
 /* ...........................................last-div......................... */
-#satis{
-    margin-top: 50px;
-    text-align: center;
-}
+
 #last-div{
+    /* border: 1px solid; */
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin-top: 50px;
+    margin-top: 0px;
+    margin-left: 10px;
     gap: 50px;
+    padding: 5%;
 }
 #last-div2{
     display: flex;
     gap: 10px;
 }
+
+#last-div3 p{
+    color: #b7bfce;
+}
+
+#last-div4 p{
+    color: #b7bfce;
+}
+
+#last-div1 hr{
+    color: #b7bfce;
+    width: 90%;
+    margin-right: 100px;
+
+}
+#last-p{
+    /* border: 1px solid; */
+    width: 91%;
+    color: #b7bfce;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+#last-div4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+}
 /* ..................................footere............ */
 
-#footer{
-border: 1px solid;
+footer{
+/* border: 1px solid; */
+width: 100%;
+height: 50vh;
 margin-top: 50px;
-/* display: flex; */
+background-color: #1ca0e3;
+
 }
+#foo{
+    /* border: 1px solid royalblue; */
+   display: flex;
+   justify-content: center;
+   align-self: auto;
+   margin-top: 50px;
+   background-color: #1ca0e3;
+}
+
+
 #footer1{
+    /* border: 1px solid; */
     display: flex;
-    margin-top: 80px;
+   flex-direction: column;
+   width: 25%;
+   margin-top: 5px;
+   margin-left: 40px;
+}
+/* #footer1 p{
+    margin-top: 0px;
+} */
+#footer1 img{
+
+    width: 50%;
+}
+#footer1 img+p{
+     margin-top: -35px;
+    color: #85dbfc;
 }
 #footer2{
-    border: 1px solid;
-         
-   width: 500px;
-   display: flex;
-   justify-content: space-evenly;
+    display: flex;
     margin-left: 300px;
-    margin-top: 40px;
+    padding: 50px;
+    gap: 50px;
+}
+
+#footer4{
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+#footer4 p{
+    color: #85dbfc;
+}
+#footer21 h1{
+    color: wheat;
+}
+#foo-last{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 65px;
+}
+#foo-last p{
+    color: wheat;
+}
+
+.last-hr{
+    width: 90%;
+    color:#57c5f3; 
+    margin-left: 50px;
+}
+#back{
+    width: 120px;
+    height:7vh;
+    border-radius: 20px;
+}
+#next{
+    width: 120px;
+    height:7vh;
+    border-radius: 20px;
+}
+
+/* ...........................sea-img........................... */
+#sea-img{
+  
+   /* border: 1px solid; */
+    min-height: 50vh;
+    width: 90%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(" https://media.istockphoto.com/id/482612302/photo/saona-island-beach.jpg?s=170667a&w=0&k=20&c=v63v_zB9rsZTlMJ-JUgmxYpNblWrgb-0gvVkI-vwRc4=");
+    /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./background\ image.jpg"); */
+    background-size: cover;
+   background-position: center;
+   margin-left: 60px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   padding-top: 100px;
+}
+#sea-img img{
+    width: 200px;
+   border-radius: 25px;
+}
+#sea-img1{
+    /* border: 1px solid; */
+    font-size: large;
+    width: 50%;
+    
+    text-align: center;
+}
+#sea-img1 p{
+    color: #b7bfce;
 }

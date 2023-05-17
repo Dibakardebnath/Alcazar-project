@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <script src="https://kit.fontawesome.com/b6693937f8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
    <div class="header">
 
        <nav>
-        <img src="https://cdn.dribbble.com/users/102622/screenshots/8197800/media/a3618bdf922aafba27cefc4d13625342.jpg?compress=1&resize=400x300" class="logo">
+        <img src="./alcazar logo png.png" class="logo">
          <ul class="nav-link">
             <li><a href="#">Download App</a></li>
             <li><a href="#">Partner With Us</a></li>
@@ -21,16 +22,18 @@
          </ul>
          <a href="#" class="Register">Register Now</a>
     </nav>
+    <div id="travel">
+          <h1>Travel around the world</h1>
+          <li>Trusted by 80 million Travelers. Aalcazar is the world's most comprehensive travel, flight and accommodation provider. very easy  to access on your smarttree and desktop</li>
+    </div>
     <div class="container">
-        <h1>Travel Around The World</h1>
-        <!-- <p>Trusted by 80 million Travelers. Alcazar is the world's most
-             comprehensive tavel, flight and accommodation provider.
-              very easy to access on your smarttree and desktop</p> -->
+       
         <div class="search-bar">
             <form>
+                <i  class="fa-solid fa-location-dot"></i>
                 <div class="location-input">
-                    <label>Location</label>
-                    <input type="text" placeholder="Ciyt,destination, or hotel name">
+                    <label style="margin-left: 14px;">Location</label>
+                    <input style="margin-left: 13px;" type="text" placeholder="Ciyt,destination, or hotel name">
                 </div>
                
                 <div>
@@ -42,7 +45,8 @@
                     <label>Guest</label>
                     <input type="text" placeholder="Add Gust">
                 </div>
-                <button type="submit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB9CAMAAABTaScUAAAAY1BMVEX///8AAADx8fH8/Pz19fWjo6Pu7u6oqKjb29uHh4fX19d2dnbBwcGzs7O7u7vp6ekODg4UFBQgICCbm5sZGRlpaWlSUlLIyMhMTEw5OTmQkJAlJSVdXV0zMzNFRUXR0dF+fn4hovx0AAAE9UlEQVRogcVb24LiIAztXVrbYqtVe/f/v3J1Zt1xTQLhUuc8g6cEOElIDAIuMlGnQ7eMTRiGh7af8mNVSPZsF8SyvPWnEKKZ97WItyWXu2lEqJ9oz4Pc7AviulNQPzFVyRbk0fHAIP9C7v0cyJzL/YW98EkeHVU7jqHxaIGyNyR/4FT5OYTR3oL8gcnHDtSNJfsdqSt5fLMnv6OLnNizsxN7GC4uG1DMjuz3E1has1/YQqPCzpK99kEe2h7A0hO7Hf+F9cu87TG3f6G57n031OVaFMV6KY/7RcNfG7JnqjPf3OrsfXw5KN1CYcQeK+57dyHEfL3RW9EY6Q+pdYdcpSPy2JIfbeCAyEOv9eMypyxwZLNnWCh5x3xhTBbUvq1ceiKky5nTU3z6wowBcbU78MVb4JeAZ/4IjW1GE9cl0Q1oWPHXEZvam4Vu0YT9SMeYiZ67+V1mdMCFg2FBLKI2Zr/jivzOpJ2VWX41QIKdP+3lw3beLmBZEae118yJkZ2/WbHj919zgpE731uyo/I1KCfEyAy2WAJIqP+9UvqkP9M/gJhf6TZ2YPjBJVVETtJNNR6KFdfP4IDLaRV+X8K76pYlBdD6iqMEwwzdRdVhAL+o8HtQcDkBhgoCaM+ZHgxdrSN7EEDXQw6Fzu7mTA/vHhlzF2CofXr6hAC/SaYcQHFb9/ehBCRApO4CQ12d2YMAvAyRlwncEtdr9wDw4BMlPMDfOD8NBYiWjJTXAdtk7+x+AL0YJaRAcs3yUhwRmx64Zx/vgnz693EHH/QJWBSXnpeW6OiBlFJR+y+v/pf3HjxNfPbkA3/72XsPIr1NVK+lVA8EO5to/pnSfODxFIERG+CRjFxT9T5ytEis35CARJsM3WG04xppYtFORQ2VICxVZ4QcAIsqrhO4ea0zPcyb6DQHlsxchUcCKVPk6zC7d0vxsDhbsZ/wW0PHcjTM8BWnGXkOcxM+aM6TKmeFD0ujU4oLszbl2xq8pU53D3kpUpZVsMdIe6cfwecCzQMlVAkH4UdqIpqblMAZ1qcPe5jXmRJ70rUzP/JSQydY/yYh9K2V48Nqe/qEHetVuFqID1aRYWTMAitFaY0GgHa6cPw3WsPrzNYfo+ys5wJE+O84m6hfgneb8AJnvBA2889/hlUyeKWcgC7gcsvgJVGF5P4Aovzfn88xQKbodSHDvP9B1CHDU6o9gZWyw4nJj5bhHuh3yitY6hptePwR3T1wGqisP0sZvV28/S9UTRnntAA2EBWnl5DNr+lbWbq0XGX2gCzKqlv4nV08+yOe/x3tPPfzPJo2F/H40VKyF/w2Py+AgYUgX+CdP19dWxA8+69eetbs+WE1wBeY/mezA8gMoAtbA+haHZnrj8lOJCX2UndzmP4vEEw9f8HyiKx88QcF6YJx8r8BvU65+X2ERcfeguknm9Ct36CPUeScXu15v756Y2/2vyMp92RD3heaqXpPyHT8Zn2U8WWgAqprXmKhoM/1f3+C2A3dtX8a4jQvU56uZBDocf9fviHJpBCFEFImsToF3ITfAN7t75nftI/XFDr92Xr9/vTPDr9tfw3/uDG9jn9revX+L5vTK9fvo2Zoz9+4F81c+D+xeJqf+ezkDvT8kYVV/0DWb/No64//o+yAf3HsiDTGf/vP/dvANvznz7O/2N/wqdwXvh9OTx9SG4h6DK+7V6X9A/E7O57v+iWCAAAAAElFTkSuQmCC" alt=""></button>
+                <!-- https://www.clipartmax.com/png/middle/243-2430404_instagram-search-icon-circle.png -->
+                <button id="searchbtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
     </div>
@@ -56,11 +60,11 @@
     </div>
     <div id="secondDiv">
         <button id="btn1">All</button>
-        <button id="btn2">Trending</button>
-        <button id="btn3">Popular</button>
-        <button id="btn4">Features</button>
-        <button id="btn5">Recommend</button>
-        <button id="btn6">Tour packages</button>
+        <button id="back">Trending</button>
+        <button id="back">Popular</button>
+        <button id="back">Features</button>
+        <button id="back">Recommend</button>
+        <button id="back">Tour packages</button>
        
     </div>
 
@@ -142,83 +146,87 @@
 
          <div id="animation">
 
-            <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHnu4Nnwz3Scvzi_fR9mHWvUAFjGc3Q4TTnGMmS5F1g&usqp=CAU&ec=48665699" alt="">
+            <div id="travel-img">
+                <img src="https://images01.nicepagecdn.com/page/56/36/website-template-preview-56361.jpg" alt="">
             </div>
 
-            <div>
+            <div id="read-div">
                 <h1>Safely Saved List</h1>
                 <p>Are you trying to copy text from a website that blocks y
                     ou from selecting or right-clicking content? While it migh
                     t seem impossible, there are several ways to copy text from any protected 
-                    website, even if you can't right-click the page. This wikiHow guide 
+                    website, even if you can't,This wikiHow guide right-click.
                     </p>
-                    <button>Read More</button>
+                    <button id="readmore">Read More</button>
             </div>
 
           
 
-            <div>
-                <h1>Safely Saved List</h1>
-                <p>Are you trying to copy text from a website that blocks y
+            <div id="read-div">
+                <h1>Passenger Quick Pick</h1>
+                <p>Fill in passenger details now, from a website that blocks y
                     ou from selecting or right-clicking content? While it migh
                     t seem impossible, there are several ways to copy text from any protected 
-                    website, even if you can't right-click the page. This wikiHow guide 
+                    website, even if you can't right-click the page. 
                     </p>
-                    <button>Read More</button>
+                    <button id="readmore">Read More</button>
             </div>
-            <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHnu4Nnwz3Scvzi_fR9mHWvUAFjGc3Q4TTnGMmS5F1g&usqp=CAU&ec=48665699" alt="">
+            <div id="travel-img">
+                <img src="https://images01.nicepagecdn.com/page/51/08/website-template-preview-51088.jpg" alt="">
             </div>
   
 
-            <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHnu4Nnwz3Scvzi_fR9mHWvUAFjGc3Q4TTnGMmS5F1g&usqp=CAU&ec=48665699" alt="">
+            <div id="travel-img">
+                <img src="https://n2f3m3x8.rocketcdn.me/wp-content/uploads/2018/12/lets-go-travel.jpg" alt="">
             </div>
 
-            <div>
-                <h1>Safely Saved List</h1>
-                <p>Are you trying to copy text from a website that blocks y
+            <div id="read-div">
+                <h1>Flight Price Alert</h1>
+                <p>Instant Notification You that blocks y
                     ou from selecting or right-clicking content? While it migh
                     t seem impossible, there are several ways to copy text from any protected 
-                    website, even if you can't right-click the page. This wikiHow guide 
+                    website, even if you can't right-click the will text from a website. 
                     </p>
-                    <button>Read More</button>
+                    <button id="readmore">Read More</button>
             </div>
            
             
-            <div>
-                <h1>Safely Saved List</h1>
-                <p>Are you trying to copy text from a website that blocks y
-                    ou from selecting or right-clicking content? While it migh
+            <div id="read-div">
+                <h1>Easy Reschedule</h1>
+                <p>No more chasing after the airline copy text from a website that blocks y
+                    ou from selecting or  While it migh
                     t seem impossible, there are several ways to copy text from any protected 
-                    website, even if you can't right-click the page. This wikiHow guide 
+                    website, even if you can't right-click the page.right-clicking content?
                     </p>
-                    <button>Read More</button>
+                    <button id="readmore">Read More</button>
             </div>
-            <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHnu4Nnwz3Scvzi_fR9mHWvUAFjGc3Q4TTnGMmS5F1g&usqp=CAU&ec=48665699" alt="">
+            <div id="travel-img">
+                <img src="https://www.all-travel.com/images/thumbnails/travelrules-thumb.jpg" alt="">
             </div>
           
 
             
-            <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHnu4Nnwz3Scvzi_fR9mHWvUAFjGc3Q4TTnGMmS5F1g&usqp=CAU&ec=48665699" alt="">
+            <div id="travel-img">
+                <img src="https://multicity.blob.core.windows.net/multicity/SectionImages/AppWebViewIcons/commonallsections/TRAVEL-AGENTS-5.png" alt="">
             </div>
 
-            <div>
-                <h1>Safely Saved List</h1>
-                <p>Are you trying to copy text from a website that blocks y
+            <div id="read-div">
+                <h1>Stay Guarantee</h1>
+                <p>How to Claim StayGurantee from a website that blocks y
                     ou from selecting or right-clicking content? While it migh
-                    t seem impossible, there are several ways to copy text from any protected 
-                    website, even if you can't right-click the page. This wikiHow guide 
+                    t , there are several ways to copy text from any protected 
+                    website, even if you can't right-click the page. seem impossible
                     </p>
-                    <button>Read More</button>
+                    <button id="readmore">Read More</button>
             </div>
            
          </div> 
+         <div id="satisfied">
+            <img id="first" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWOsldGFbP9rYZqQbBhopx_srDqG61ZKQJsz6MSqPajw&usqp=CAU&ec=48665699" alt="">
+            <h1 id="satis">Satisfied Customers Are Our Best Ads</h1>
+           <img id="second" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWOsldGFbP9rYZqQbBhopx_srDqG61ZKQJsz6MSqPajw&usqp=CAU&ec=48665699" alt="">
+         </div>
          
-         <h1 id="satis">Satisfied Customers Are Our Best Ads</h1>
 
          <div id="last-div">
 
@@ -226,7 +234,7 @@
                 <div id="last-div2">
                     <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
                      <div id="last-div3">
-                        <h2>Dibakar Debnath</h2>
+                        <h2>Yogesh nath</h2>
                         <p>Bloger Imidiatly</p>
                      </div>
                      <div id="last-div4">
@@ -236,7 +244,43 @@
                     
                 </div>
                 <hr>
-                <p>For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
+                <p id="last-p">For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
+                    , we’re asking </p>
+            </div>
+
+            <div id="last-div1">
+                <div id="last-div2">
+                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
+                     <div id="last-div3">
+                        <h2>Mandeep Ray</h2>
+                        <p>Bloger Imidiatly</p>
+                     </div>
+                     <div id="last-div4">
+                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
+                         <p>4.8</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p id="last-p">For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
+                    , we’re asking</p>
+            </div>
+
+            <div id="last-div1">
+                <div id="last-div2">
+                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
+                     <div id="last-div3">
+                        <h2>Hitesh Sona</h2>
+                        <p>Indonesian</p>
+                     </div>
+                     <div id="last-div4">
+                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
+                         <p>4.4</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p id="last-p">Yo help everyone in the world learn how to do anything. Today
                     , we’re asking that you join us. Any amount that you can contribute </p>
             </div>
 
@@ -244,17 +288,17 @@
                 <div id="last-div2">
                     <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
                      <div id="last-div3">
-                        <h2>Dibakar Debnath</h2>
-                        <p>Bloger Imidiatly</p>
+                        <h2>Shiva Verma</h2>
+                        <p>Rasian Tourists</p>
                      </div>
                      <div id="last-div4">
                         <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
-                         <p>3.4</p>
+                         <p>5.0</p>
                     </div>
                     
                 </div>
                 <hr>
-                <p>For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
+                <p id="last-p">Everyone in the world learn how to do anything. Today
                     , we’re asking that you join us. Any amount that you can contribute </p>
             </div>
 
@@ -262,17 +306,17 @@
                 <div id="last-div2">
                     <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
                      <div id="last-div3">
-                        <h2>Dibakar Debnath</h2>
-                        <p>Bloger Imidiatly</p>
+                        <h2>Dibakar Deb</h2>
+                        <p>Tripura Tourists</p>
                      </div>
                      <div id="last-div4">
                         <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
-                         <p>3.4</p>
+                         <p>4.8</p>
                     </div>
                     
                 </div>
                 <hr>
-                <p>For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
+                <p id="last-p">The world learn how to do anything. Today
                     , we’re asking that you join us. Any amount that you can contribute </p>
             </div>
 
@@ -280,71 +324,88 @@
                 <div id="last-div2">
                     <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
                      <div id="last-div3">
-                        <h2>Dibakar Debnath</h2>
-                        <p>Bloger Imidiatly</p>
+                        <h2>Rohit Kumar</h2>
+                        <p>Brunei Tourists</p>
                      </div>
                      <div id="last-div4">
                         <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
-                         <p>3.4</p>
+                         <p>3.3</p>
                     </div>
                     
                 </div>
                 <hr>
-                <p>For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
-                    , we’re asking that you join us. Any amount that you can contribute </p>
-            </div>
-
-            <div id="last-div1">
-                <div id="last-div2">
-                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
-                     <div id="last-div3">
-                        <h2>Dibakar Debnath</h2>
-                        <p>Bloger Imidiatly</p>
-                     </div>
-                     <div id="last-div4">
-                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
-                         <p>3.4</p>
-                    </div>
-                    
-                </div>
-                <hr>
-                <p>For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
-                    , we’re asking that you join us. Any amount that you can contribute </p>
-            </div>
-
-            <div id="last-div1">
-                <div id="last-div2">
-                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
-                     <div id="last-div3">
-                        <h2>Dibakar Debnath</h2>
-                        <p>Bloger Imidiatly</p>
-                     </div>
-                     <div id="last-div4">
-                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
-                         <p>3.4</p>
-                    </div>
-                    
-                </div>
-                <hr>
-                <p>For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
+                <p id="last-p"> Decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
                     , we’re asking that you join us. Any amount that you can contribute </p>
             </div>
 
          </div>
-
+          <!-- ........................sea image....................... -->
+          <div id="sea-img">
+                <div id="sea-img1">
+                    <h1>Set your price alert now</h1>
+                    <p>Get alerts when we find ticket prices that match your budget. Price 
+                        Alerts is available on the web aand the latest Traveloka App.
+                    </p>
+                </div>
+                <div>
+                    <img  src="https://i0.wp.com/www.techdigest.tv/wp-content/uploads/2021/02/get-it-on-google-play-badge.png?ssl=1" alt="">
+           
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/download-on-the-app-store-apple-logo-png-transparent.png" alt=""> 
+                    
+                </div>
+              
+            </div>
 
          <!-- ................................footer............................... -->
-         <footer id="footer">
-            <div id="footer1">
-                <img src="https://cdn.dribbble.com/users/102622/screenshots/8197800/media/a3618bdf922aafba27cefc4d13625342.jpg?compress=1&resize=400x300" class="logo" alt="">
-                <h3>Alcazar</h3>
+         <footer>
+            <div id="foo">
+                <div id="footer1">
+                    <img src="./alcazar logo png.png" alt="">
+                    <p>Convience is our priority to satisfied our customers, and provide all
+                         the features you can easily and quickly</p>
+                </div>
                 <div id="footer2">
-                    <h3>About</h3>
-                    <h3>Product</h3>
-                    <h3>Social</h3>
+                    <div id="footer21">
+                        <h1>About</h1>
+                        <div id="footer4">
+                            <p>How to book</p>
+                            <p>Contact Us</p>
+                            <p>Help center</p>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <div id="footer21">
+                            <h1>Products</h1>
+                            <div id="footer4">
+                                <p>destination</p>
+                                <p>Flight</p>
+                                <p>Instagram</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <div id="footer21">
+                            <h1>Social</h1>
+                            <div id="footer4">
+                                <p>Facebook</p>
+                                <p>Twitter</p>
+                                <p>Instagram</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+           
+            <hr class="last-hr">
+          <div id="foo-last">
+            <p>Privacy Policy</p>
+            <p>Coppyright 2022 Alcazar</p>
+          </div>
+
          </footer>
+        
    </div>
    
 </body>
