@@ -1,0 +1,222 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+#container{
+    width: 67%;
+    margin: auto;
+    /* background-color: yellow; */
+}
+#title p{
+    font-size:30px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+#title i{
+    margin-right: 20vh;
+    /* background-color: yellow; */
+}
+#title span{
+    margin-left: 5px;
+}
+#title span a{
+    text-decoration: none;
+    color: black;
+    text-decoration-line: underline;
+    margin-left: 20px;
+    /* background-color: red; */
+    margin-right: 50vh;
+}
+#title .share{
+   margin: auto;
+   padding: 10px 15px 10px 15px ;
+}
+#title .share:hover{
+   background-color: rgb(241, 241, 241);
+   cursor: pointer;
+   border-radius: 20px;
+}
+#images{
+    display: flex;
+    /* background-color: red; */
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    max-width: 130vh;
+    max-height: 47vh;
+}
+#images .first{
+    
+    /* background-color: yellow; */
+    display: flex;
+    /* overflow: hidden; */
+}
+#images .first img{
+    border-radius: 20px 0 0 20px;
+    width: 100%;
+}
+#images .second{
+    /* max-width: 70vh;
+    max-height: 47vh; */
+    /* background-color: yellow; */
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-left: 10px;
+} 
+#images .second img{
+    width: 100%;
+    margin: auto;
+}
+#images div img:hover{
+    opacity: 70%;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+hr{
+    width: 65%;
+}
+#midContainer{
+    /* background-color: red; */
+    display: flex;
+    width: 135vh;
+    margin: auto;
+}
+#midContainer #left{
+    width: 60%;
+    height: 80vh;
+}
+#left >p{
+    font-size: 30px;
+    font-weight: 600;
+}
+.left-side{
+    background-color: #f0efe9;
+    /* background-color: aliceblue; */
+    width: 50vh;
+    height: 55vh;
+    margin: auto;
+    padding: 50px;
+}
+.left-side > div{
+    display: flex;
+    margin-bottom: 20px;
+}
+.left-side img{
+    width: 40px;
+    border-radius: 150px;
+    height: 40px;
+    margin: auto;
+}
+.left-side p{
+    margin: auto;
+    font-size: 20px;
+}
+.left-side div i{
+    /* background-color: rgb(12, 117, 209); */
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+}
+.left-side div span{
+    font-size: 20px;
+    /* background-color: white; */
+    margin-left: 30px;
+}
+.discription{
+    width: 90%;
+    /* background-color: red; */
+}
+.discription + a{
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.left-side div button{
+    /* background-color: red; */
+    font-size: 20px;
+    font-weight: 600;
+    color: #f0efe9;
+    background-color: black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#last_p{
+    font-size: 10px;
+    width: 80%;
+    /* background-color: red; */
+}
+#right{
+    /* background-color: red; */
+    margin: auto;
+    width: 60vh;
+}
+#right_box{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    /* background-color: white; */
+    width: 60%;
+    margin: auto;
+    height: 50vh;
+    border-radius: 20px;
+    padding: 20px;
+}
+#right_box button{
+    font-size: 20px;
+    background-color: #8c1550;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#right_box >p{
+    /* background-color: red; */
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+#right_title{
+    display: flex;
+    /* background-color: yellow; */
+    /* background-color: red; */
+    width: 30vh;
+    margin: auto;
+    margin-top: 30px;
+}
+#right_title i{
+    margin: auto;
+}
+#right_title p{
+    font-size: 20px;
+    margin: auto;
+    margin-left: 0px;
+}
+#right_date{
+    /* background-color: black; */
+    height: 5vh;
+    margin: auto;
+    padding: 20px 0 20px 0 ;
+}
+#right_date input{
+    width: 150px;
+    height: 4vh;
+    border-radius: 10px;
+    margin: 20px 0 20px 15px;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    /* background-color: red; */
+}
+.total p{
+    margin: auto;
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 600;
+}

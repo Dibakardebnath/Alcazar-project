@@ -5,39 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b90a60688f.js" crossorigin="anonymous"></script>
-    <title>cart Page</title>
-    <style>
-        nav{
-            display: flex;
-            width: 60%;
-            background-color: red;
-            margin: auto;
-        }
-        nav div{
-            width: 50vh;
-            margin: auto;
-        }
-        nav img{
-            width: 3%;
-            border-radius: 200px;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbkVWMxLrShRuNLfbD5e3d9QGQesLZJ-Efnw&usqp=CAU" alt="">
-        <div>
-            <input type="text" placeholder="Start your search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div>
-            <button>Switch to hosting</button>
-            <i class="fa-solid fa-earth-americas"></i>
-            <div>
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-user"></i>
+    <div id="container">
+        <div id="title">
+            <p id="container_title_p">Plan City Adventures from a Surry Hills Balcony</p>
+            <i class="fa-solid fa-star"><span>4.92 . 597 reviews<a href="#">Surry Hills, New South Wales, Australia</a></span></i>
+            <i class="fa-solid fa-arrow-up-from-bracket share"><span>Share</span></i>
+            <i class="fa-regular fa-heart share" ><span>Save</span></i>
             </div>
         </div>
-    </nav>
+        <div id="images">
+            <div class="first">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-2694793/original/a6d39bc6-9564-4503-8b84-c796ecda03af.jpeg?im_w=1200" alt="">
+            </div>
+            <div class="second">
+                <img src="https://a0.muscache.com/im/pictures/a0b3e1d3-2e64-421b-b021-98e1973f9cfe.jpg?im_w=720" alt="">
+                <img src="https://a0.muscache.com/im/pictures/749528e3-d251-4ee7-aa24-4b13604e7501.jpg?im_w=720" alt="">
+                <img src="https://a0.muscache.com/im/pictures/a0b3e1d3-2e64-421b-b021-98e1973f9cfe.jpg?im_w=720" alt="">
+                <img src="https://a0.muscache.com/im/pictures/a0b3e1d3-2e64-421b-b021-98e1973f9cfe.jpg?im_w=720" alt="">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="midContainer">
+        <div id="left">
+            <p>Meet your Host</p>
+            <div class="left-side">
+                <div>
+                    <p>Room in a home hosted by Bron</p>
+                    <img src="https://a0.muscache.com/im/pictures/user/33304422-5c16-4c24-aac6-675348235ab2.jpg?im_w=240" alt="">
+                </div>
+                <div>
+                    <i class="fa-regular fa-face-smile"><span>My work: Business owner</span></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-face-smile"><span>Fun fact: I like cars and racing</span></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-clock"><span>I spend too much time in travel</span></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-face-smile-wink"><span>I always: Make friends</span></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-face-smile"><span>I like to spend time with guests</span></i>
+                </div>
+                <p class="discription">
+                    Easy going person who loves my family, pets, friends & gorgeous neighbourhood of Surry Hills. I really look forward to sharing my home and enthusiasm for the beautiful city of Sydney with guests.
+                </p>
+                <a href="">Show more <span> ></span></a>
+                <div>
+                    <button>Message Host</button>
+                </div>
+                <hr>
+                <p id="last_p">To protect your payment, never transfer money or communicate outside of the Airbnb website or app.</p>
+            </div>
+        </div>
+        <div id="right">
+            <div id="right_box">
+                <div id="right_title">
+                    <p style="font-weight: 600;">₹8,181 <span style="font-size: 10px;"> night</span></p>
+                    <i class="fa-solid fa-star"><span>4.92 <a href="#">. 597 reviews</a></span></i>
+                </div>
+                <div id="right_date">
+                    <input type="datetime-local">
+                    <input type="datetime-local">
+                </div>
+                <button>Proceed to Payment</button>
+                <hr>
+                <p>You won't be charged yet</p>
+                <div class="total">
+                    <p>₹8,181 x 5 nights</p>
+                    <p>₹40,904</p>
+                </div>
+                <div class="total">
+                    <p>Airbnb service fee</p>
+                    <p>₹5,775</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
+<script src="script.js"></script>
