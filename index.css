@@ -65,13 +65,13 @@ nav{
     color: #d7f9fa;
     
 }
-.header p{
+/* .header p{
     font-size: 2vw;
     font-weight: 0px;
     color: #fff;
     text-align: center;
     padding-top: 1%;
-}
+} */
 /* .....................................search..................... */
 form>i{
     color: #cc1c2c;
@@ -129,86 +129,81 @@ form>i{
     font-size: 20px !important;
 }
 /* .........................image................................ */
-/* #container{
-   
-   
-} */
-#firstDiv{
-    /* border: 1px solid; */
-    margin-top: 100px;
+ 
+ /* #firstDiv{ 
+     border: 1px solid; 
+     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-#firstDiv h1+p{
+} */
+/* #firstDiv h1+p{
     margin-top: 20px;
     color: #abafbd;
-}
-#secondDiv{
-    /* border: 1px solid; */
-    margin-top: 30px;
-    margin-left: 73px;
-    /* margin-right: 100px; */
-     width: 85%;
+}  */
+ /* #secondDiv{
+     border: 1px solid;
+     margin-right: 100px; 
+      width: 85%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-}
-#btn1{
+    align-items: center; 
+ }  */
+ /* #btn1{
     background-color: #1ca0e3;
 
     border-radius: 30px;
     padding: 2%;
-}
+}  */
 
 
-/* ..........................image counter................................. */
-#image-counter{
-    /* border: 1px solid; */
-    /* padding: 0; */
-    padding-left:70px;
+/* ..........................image counter................................. */ 
+/* #image-counter{
+   
+    padding: 0; 
+     padding-left:70px;
     padding-right: -10px;
     margin-top: 70px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    /* justify-content: space-evenly; */
+    gap: 25px; 
+    justify-content: space-evenly;
 
-}
-.heading{
+} */
+ /* .heading{ 
     
-    display: flex;
+     display: flex;
     margin-left: 10px;
     gap: 80px;
-}
+} */
 
-#image1 img{
+/* #image1 img{
     border-radius: 20px;
 }
 hr{
     width: 250px;
     margin-top: 10px;
     margin-left: 5px;
-}
-#text{
+}  */
+ /* #text{
     border: 1px solid;
     width: 255px;
-}
-#text p{
+} */
+/* #text p{
     line-height: 1.5em;
     height: 3em;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
-    /* width: f; */
-}
+    text-overflow: ellipsis; 
+    
+} */
 /* ..............................................allbtn...................... */
-#Allbtn{
+/* #Allbtn{
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-}
-#Allbtn2{
+} */
+/* #Allbtn2{
   
     width: 40%;
     display: flex;
@@ -216,23 +211,23 @@ hr{
    gap: 10px;
    border-radius: 30px;
   
-}
-#Allbtn2 button{
+} */
+/* #Allbtn2 button{
     width: 100px;
     height: 6vh;
    border-radius: 500px;
-}
-#back{
+} */
+/* #back{
  margin-left: 90px;
  width: 100px;
  height: 5vh;
 
-}
-#next{
+} */
+/* #next{
     margin-right: 100px;
     width: 100px;
  height: 5vh;
-}
+} */
 /* ....................................animi................................... */
 
 #animation{
@@ -240,13 +235,13 @@ hr{
       margin-top: 50px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      width: 90%;
-      margin-left: 80px;
+      width: 100%;
+      margin-left: 90px;
       gap: 50px;
 }
 #travel-img{
     /* border: 1px solid; */
-    width: 80%;
+    width: 70%;
 }
 #travel-img img{
     width: 100%;
@@ -271,23 +266,23 @@ hr{
 }
 /* ............................. satisfied..................*/
 #satisfied{
-    width: 100%;
-    /* border: 1px solid; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 80px;
+    width: 90%;
 }
-#first{
+#satisfied img{
+    margin-top: 50px;
+    width: 95%;
+    margin-left: 80px;
+}
+/* #first1{
     transform: rotate(3.142rad);
     width: 300px;
     height: 100px;
 }
-#second{
+#second1{
     
     width: 300px;
     height: 100px;
-}
+} */
 
 
 
@@ -301,13 +296,14 @@ hr{
 
 #last-div{
     /* border: 1px solid; */
-    width: 100%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin-top: 0px;
-    margin-left: 10px;
+    margin-left: 60px;
+    /* margin-right: 10px; */
     gap: 50px;
-    padding: 5%;
+    padding: 2%;
 }
 #last-div2{
     display: flex;
@@ -374,11 +370,13 @@ background-color: #1ca0e3;
     margin-top: 0px;
 } */
 #footer1 img{
-
+      /* margin-bottom: -50px; */
+      /* border: 1px solid; */
     width: 50%;
+    height: 22vh;
 }
 #footer1 img+p{
-     margin-top: -35px;
+     margin-top: -20px;
     color: #85dbfc;
 }
 #footer2{
@@ -395,25 +393,30 @@ background-color: #1ca0e3;
 }
 #footer4 p{
     color: #85dbfc;
+    margin-bottom: 8px;
+  
 }
 #footer21 h1{
     color: wheat;
 }
 #foo-last{
+    /* border: 1px solid; */
+    width: 95%;
     margin-top: 15px;
+    margin-left: 24px;
     display: flex;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 65px;
+    padding-left: 92px;
+    padding-right: 90px;
 }
 #foo-last p{
     color: wheat;
 }
 
 .last-hr{
-    width: 90%;
+    width: 81%;
     color:#57c5f3; 
-    margin-left: 50px;
+    margin-left: 120px;
 }
 #back{
     width: 120px;
@@ -431,12 +434,12 @@ background-color: #1ca0e3;
   
    /* border: 1px solid; */
     min-height: 50vh;
-    width: 90%;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(" https://media.istockphoto.com/id/482612302/photo/saona-island-beach.jpg?s=170667a&w=0&k=20&c=v63v_zB9rsZTlMJ-JUgmxYpNblWrgb-0gvVkI-vwRc4=");
+    width: 85%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./Banner.jpg");
     /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./background\ image.jpg"); */
     background-size: cover;
    background-position: center;
-   margin-left: 60px;
+   margin-left: 87px;
 
    display: flex;
    flex-direction: column;
@@ -453,9 +456,11 @@ background-color: #1ca0e3;
     /* border: 1px solid; */
     font-size: large;
     width: 50%;
+    margin-top: -120px;
     
     text-align: center;
 }
 #sea-img1 p{
-    color: #b7bfce;
+    color: #66676b;
+    margin-top: 20px;
 }
