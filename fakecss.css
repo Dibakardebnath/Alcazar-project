@@ -1,0 +1,119 @@
+#container2 {
+    width: 50%;
+    padding: 5%;
+}
+
+#package-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+#image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#package-detail p {
+    font-size: 12px;
+    margin: 0;
+}
+
+#price-details {
+    /* display: flex;
+    justify-content: space-around; */
+    /* box-shadow: rgba(198, 188, 188, 0.16) 0px 1px 4px;
+     */
+     border: solid 1px rosybrown;
+     padding: 10px;
+}
+#value-list1
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -25px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    align-items: center;
+}
+#value-list
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -25px;
+}
+
+#price-details p {
+    font-size: 16px;
+    margin: 0;
+}
+
+#price-details h4 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+#payment-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.payment h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.payment p {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+
+#credit-bit-usdt{
+    box-shadow: rgba(153, 33, 33, 0.16) 0px 1px 4px;
+    padding: 10px;
+}
+#credit-logo button {
+    padding: 6px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 200px;
+    margin-top: 20px;
+    align-self: center;
+}
+#credit-logo button:hover {
+    background-color: #45a049;
+}
+#credit-img
+{
+    display: flex;
+    /* align-items: center; */
+}
+#credit-img img{
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-top: 10px;
+    margin-top: 13px;
+    margin-left: 20px;
+}

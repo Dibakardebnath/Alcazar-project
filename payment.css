@@ -89,6 +89,9 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+.btn :hover{
+  background-color: #45a049;;
+}
 
 
 .payment-logo{
@@ -112,7 +115,7 @@ body {
   left: 5px;
   width: 90px;
   height: 90px;
-  background: #2196F3;
+  background: hsl(207, 90%, 54%);
   border-radius: 50%;
 }
 

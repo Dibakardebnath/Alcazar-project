@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <style>
+        body {
+            background-image: url(https://wallpapers.com/images/featured-full/travel-hd-background-axhrsecphqby11wk.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #big-box {
+            width: 80%;
+            background: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+        }
+
+        #container1 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+        }
+
+        #container1 h2 {
+            margin-top: 0;
+            font-size: 24px;
+            text-align: center;
+            color: #2196F3;
+        }
+
+        #container1 h3 {
+            font-size: 20px;
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #container1 label {
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        #container1 input {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        #container1 input[type="checkbox"] {
+            margin-top: 10px;
+        }
+
+        #container1 button {
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 190px;
+            margin-top: 20px;
+            align-self: center;
+        }
+
+        #container1 button:hover {
+            background-color: #45a049;
+        }
+
+        #container1 .error-message {
+            color: #ff0000;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #container2 {
+            width: 50%;
+        }
+        #banks
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+      
+    </style>
+    <link rel="stylesheet" href="./fakecss.css">
+</head>
+<body>
+    <div id="big-box">
+        <div id="container1">
+            <h2>Need help planning your holiday?</h2>
+            <h3>How can we get in touch with you in one step?</h3>
+            <label for="name-input">Name<span style="color: #ff0000;">*</span></label>
+            <input type="text" placeholder="Name" id="name-input">
+
+            <label for="phone-input">Phone Number<span style="color: #ff0000;">*</span></label>
+            <input type="text" placeholder="Phone Number" id="phone-input">
+
+            <label for="email-input">Email Address<span style="color: #ff0000;">*</span></label>
+            <input type="email" placeholder="Email" id="email-input">
+
+            <label for="destination-input">Destination<span style="color: #ff0000;">*</span></label>
+            <input type="text" placeholder="Destination" id="destination-input">
+
+           
+            <p> <input type="checkbox" id="agreement-checkbox">I have read and agree to the <span style="color: #2196F3;">User Agreement</span> & <span style="color: #2196F3;">Privacy Policy.</span></p>
+
+            <button>Get a Callback</button>
+        </div>
+        <div id="container2">
+          
+            <div id="package-detail"> 
+                <div id="image">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-26300485/original/d037ba05-1237-4b00-9092-8fa71bada83e.jpeg?aki_policy=large" alt="">
+                </div>
+             
+                <div>
+               <h2>Destination Name</h2>
+               <p>you can explore attractions in Delhi such as Red Fort, India Gate, Rashtrapati Bhawan, Jama Masjid, Jantar Mantar, ISKCON Temple, Raj</p>
+                </div>
+            </div>
+
+            <div id="price-details">
+
+                <div id="value-list1">
+                <h3>Curruncy</h3>
+                <h3>Payment Value</h3>
+            </div>
+
+            <div id="value-list">
+                <h5>INR</h3>
+                    <p>  &#x2194;</p>
+                <h5>1200</h3>
+            </div>
+            <div id="value-list">
+                <h5>USDT</h3>
+                    <p>	&#x2194;</p>
+                <h5>$13</h3>
+            </div>
+
+            <div id="value-list">
+                <h5>BITCOIN</h5>
+                <p>	&#x2194;</p>
+                    <!-- <img src="https://www.shutterstock.com/image-vector/black-arrow-pointing-right-shape-260nw-1948031761.jpg" alt=""> -->
+                <h5>0.0002</h3>
+            </div>
+            </div>
+
+            <!-- <div id="payment-details">
+                <div class="payment">
+                    <h3>Curruncy</h3>
+                    <p class="amount">Payment Value</p>
+                </div>
+                
+                <div class="payment">
+                    <h3>Credit Card</h3>
+                    <p class="amount">$122</p>
+                </div>
+                <div class="payment">
+                    <h3>PayPal</h3>
+                    <p class="amount">$343</p>
+                </div>
+                <div class="payment">
+                    <h3>Bitcoin</h3>
+                    <p class="amount">$00.004</p>
+                </div>
+            </div> -->
+            <div id="credit-bit-usdt">
+                <div>
+                <h4> <b>CLICK</b>  on the method you want to <b>PAY</b> </h4>
+            </div>
+           <div id="credit-logo">
+                <div id="credit-img">
+                    <button id="credit"> &#9679;  Credit Card</button>
+                    <img src="https://previews.123rf.com/images/dstarky/dstarky1701/dstarky170101800/69886075-credit-card-icon-or-logo-in-modern-line-style-high-quality-black-outline-pictogram-for-web-site.jpg" alt="">
+                </div>
+                <div id="credit-img">
+                    <button> &#9679; Debit Card</button>
+                    <img src="https://d28wu8o6itv89t.cloudfront.net/images/Visadebitcardpng-1599584312349.png" alt="">
+                </div>
+                <div id="credit-img">
+                    <button> &#9679;  Bitcoin/USDT</button>
+                    <img src="https://thumbs.dreamstime.com/b/bitpay-logo-screen-smartphone-bitcoin-payment-service-provider-headquartered-atlanta-ga-usa-moscow-russia-march-144045359.jpg" alt="">
+                </div>
+           </div>
+            </div>
+
+            <div id="net">
+                <h4>NET BANKING</h4>
+            
+                <div id="banks">
+                <div class="axis">
+                    <a href="https://www.axisbank.com/"> <img src="https://www.netmeds.com/assets/pgicon/pay_axis_new.png" alt=""></a>
+                    <p>Axis</p>
+                </div>
+                <div class="HDFC">
+                    <a href="https://www.hdfcbank.com/"><img src="https://www.netmeds.com/assets/pgicon/pay_hdfc_new.png" alt=""></a>
+                    <p>HDFC</p>
+                </div>
+                <div class="ICICI">
+                    <a href="https://www.icicibank.com/"><img src="https://www.netmeds.com/assets/pgicon/pay_icici_new.png" alt=""></a>
+                    <p>ICICI<br>Netbanking</p>
+                </div>
+                <div class="kotak">
+                    <a href="https://www.kotak.com/en/home.html"><img src="https://www.netmeds.com/assets/pgicon/pay_kotak_new.png" alt=""></a>
+                    <p>Kotak</p>
+                </div>
+                <div class="state">
+                    <a href="https://www.onlinesbi.sbi/"><img src="https://www.netmeds.com/assets/pgicon/pay_sbi_new.png" alt=""></a>
+                    <p>SBI<br>India</p>
+                </div>
+            </div>
+        </div>
+     </div>
+
+</body>
+</html>
+<script>
+    document.getElementById("credit").addEventListener("click", ()=>
+    {
+        window.location.href="./payment.html"
+    })
+</script>
