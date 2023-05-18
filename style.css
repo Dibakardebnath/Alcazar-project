@@ -166,8 +166,9 @@ hr{
 }
 #right_box button{
     font-size: 20px;
-    background-color: #8c1550;
+    background-color: #209ee3;
     color: white;
+    font-weight: 600;
     padding: 10px 20px 10px 20px;
     width: 100%;
     border-radius: 10px;
@@ -204,17 +205,29 @@ hr{
     padding: 20px 0 20px 0 ;
 }
 #right_date input{
-    width: 150px;
+    font-size: 20px;
+    padding: 10px;
+    width: 130px;
     height: 4vh;
     border-radius: 10px;
     margin: 20px 0 20px 15px;
     cursor: pointer;
 }
-.total{
+#total{
     display: flex;
     /* background-color: red; */
 }
-.total p{
+#total p{
+    margin: auto;
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 600;
+}
+#total1{
+    display: flex;
+    /* background-color: red; */
+}
+#total1 p{
     margin: auto;
     margin-top: 40px;
     font-size: 15px;
