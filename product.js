@@ -3,6 +3,16 @@ import {nav,footer}from "./component/nav.js";
 document.querySelector("nav").innerHTML=nav()
 document.querySelector("footer").innerHTML=footer()
 
+var customer=JSON.parse(localStorage.getItem("accounts"))||[]
+
+displayCustomer(customer)
+function displayCustomer(customer){
+    customer.map(function(ele){
+         
+        document.getElementById("customerName").innerText=ele.firstName;
+
+    })
+}
 
 
 
