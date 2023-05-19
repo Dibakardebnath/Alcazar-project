@@ -14,8 +14,6 @@
             display: flex;
             justify-content: center;
         }
-
-
         #big-box {
             width: 80%;
             background: #f8f8f8;
@@ -352,7 +350,6 @@
                 </div>
            </div>
             </div>
-
             <div id="net">
                 <h4>NET BANKING</h4>
             
@@ -403,25 +400,28 @@
     })
 
 
-    var arr = JSON.parse(localStorage.getItem("id")) || [];
+    var z = JSON.parse(localStorage.getItem("id")) ;
+    var arr = [] ;
+    arr.push(z) ;
 displayarr(arr);
 function displayarr(data) {
   data.map(elem => {
-   document.getElementById("titleName").textContent=elem.name;
-   document.getElementById("discription").textContent=elem.discription;
- document.getElementById("image").setAttribute("src",elem.url);
+   document.getElementById("tilteName").textContent = elem.name;
+   document.getElementById("discription").textContent=elem.description;
+ document.getElementById("image3").setAttribute("src",elem.url);
   });
 }
 
-var arr = JSON.parse(localStorage.getItem("obj")) || [];
-displayarr11(arr);
+var z2 = JSON.parse(localStorage.getItem("obj")) ;
+var arr2 = [] ;
+arr2.push(z2) ;
+displayarr11(arr2);
 function displayarr11(data) {
   data.map(elem => {
      document.getElementById("INR").textContent = elem.Total;
-     document.getElementById("USDT").textContent = (elem.Total/82.70);
-     document.getElementById("bitcoin").textContent=(elem.Total/22,19,042);
-  });
+     document.getElementById("USDT").textContent = Math.round(elem.Total/82.70);
+     document.getElementById("bitcoin").textContent= (elem.Total/2219042);
+  });
 }
- 
 
 </script>
