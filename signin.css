@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	background-color: #f8f8f8;
+	font-family:Arial, sans-serif;
+	letter-spacing: 0.5px;
+	font-size: 16px;
+	line-height: 24px;
+
+	background-image: url(test.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+	
+}
+#main{
+	width: 500px;
+	max-height: 50px;
+	background-color:#209ee3;
+	padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+	
+
+	
+
+
+}
+
+.container {
+	max-width: 500px;
+    max-height: 500px;
+	margin: 50px auto;
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 0px;
+	box-shadow: 0 0 10px rgba(180, 246, 187, 0.1);
+	
+
+	
+	
+}
+
+h2 {
+	margin-bottom: 0px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+label {
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #209ee3 ;
+}
+
+input {
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	
+}
+
+button {
+	background-color: #209ee3;;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+	text-align: center;
+	border-radius: 25px;
+	
+
+}
+.btnSign{
+	padding-left: 87px;
+	padding-right: 87px;
+	
+}
+.first{
+    width: 200px;
+    height: 34px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #209ee3;
+	border: 1px solid black;
+	border-radius: 25px;
+	
+}
+.first:hover{
+	background-color: #0fdb60;
+}
+
+#forgot-password{
+    margin-bottom: 20px;
+	
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: #0fdb60;
+}
+
+.links {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+a {
+	color: #036ad8;
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+	color: #0fdb60;
+}
+#lastCont{
+	display: flex;
+	justify-content: space-between;	
+}
+.try{
+	color: black;
+	text-align: center;
+	padding-top:5px;
+}

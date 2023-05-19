@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Account Form</title>
+  <link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="header"> <span style="font-weight: 700; font-size: larger;">ALCAZAR</span> <span style="font-size: medium;">Discover the world with us</span></h1>
+		<form onsubmit="saveAccount(event)">
+			<div class="cont">
+				<h2>Account details</h2>
+				<label for="firstName">First Name:</label>
+				<input type="text" id="firstName" name="firstName"><br>
+				<label for="dob">Date of Birth:</label>
+				<input type="date" id="dob" name="dob"><br>
+				<label for="gender">Gender:</label>
+				<select id="gender" name="gender">
+				<option value="">Select Gender</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+				</select><br>
+				<h2>Account Credentials</h2> <br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br>
+				<label for="mobile">Mobile Number:</label>
+				<input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}"><br>
+			</div>
+			<div class="cont" id="count2">
+				<label for="lastName" id="lastname">Last Name:</label>
+				<input type="text" id="lastName" name="lastName"><br>
+				<label for="pincode">Pin Code:</label>
+				<input type="text" id="pincode" name="pincode"><br>
+				<label for="password" id="password1">Password:</label>
+				<input type="password" id="password" name="password"><br>
+				<button id="btn">Continue</button></a>
+			</div>
+			
+		  </form>
+		  
+	</div>
+  
+</body>
+<script src="signup.js"></script>
+</html>
