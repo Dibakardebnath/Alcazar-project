@@ -18,14 +18,12 @@
 }
 
 body {
-    background-image: url(https://wallpapers.com/images/featured-full/travel-hd-background-axhrsecphqby11wk.jpg);
+    background-image: url(./Paybackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 10px;
   }
   
-  
-
 .payment{
   background: #f8f8f8;
   max-width: 360px;
@@ -162,7 +160,9 @@ body {
 </head>
 <body>
 
+<nav>
 
+</nav>
 
 <div class="wrapper">
   <div class="payment">
@@ -203,7 +203,7 @@ body {
       </div>
         
       <div class="btn" id="pay-btn">
-        Pay
+        Pay Now
       </div> 
       
     </div>
@@ -215,9 +215,18 @@ body {
 
 </div>
 
+<footer>
+
+</footer>
+</body>
+</html>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-<script>
+<script type="module">
+
+import {nav,footer}from "./component/nav.js";
+document.querySelector("nav").innerHTML=nav()
+document.querySelector("footer").innerHTML=footer()
 	// Function to clear all error messages
 	function clearErrors() {
 		$(".error").text("");
@@ -292,5 +301,3 @@ if (cardHolder === "") {
 
 
 </script>
-</body>
-</html>

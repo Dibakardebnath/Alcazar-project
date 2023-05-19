@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         body {
-            background-image: url(https://wallpapers.com/images/featured-full/travel-hd-background-axhrsecphqby11wk.jpg);
+            background-image: url(./Paybackground.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             margin: 0 10px;
@@ -82,8 +82,13 @@
             position: relative;
         }
     </style>
+       <link rel="stylesheet" href="footer.css">
+       <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
+    <nav>
+
+    </nav>
     <div id="container">
         <div>
             <h3>
@@ -107,37 +112,43 @@
         </form>
     </div>
 
-    
-       
+    <footer>
 
-    
-    <script>
-        const otpInputs = document.querySelectorAll('.otp-inputs input');
-        const verifyBtn = document.querySelector('#verify-btn');
-  
-      otpInputs.forEach((input, index) => {
-        input.addEventListener('input', (event) => {
-            if (event.target.value && index < otpInputs.length - 1) {
-                otpInputs[index + 1].focus();
-            } else if (!event.target.value && index > 0) {
-                otpInputs[index - 1].focus();
-            }
-        });
-    });
-
-    verifyBtn.addEventListener('click', () => {
-      event.preventDefault()
-        const otpValue = Array.from(otpInputs).map(input => input.value).join('');
-        if (otpValue === '') {
-            alert('Please enter the OTP');
-          
-        } else {
-          window.location.href="paysucc.html";
-            console.log("wwwwwwwww");
-        }
-    });
-    </script>
+           </footer>
+   
 </body>
 </html>
 
-</html>
+ 
+<script type="module">
+
+import {nav,footer}from "./component/nav.js";
+document.querySelector("nav").innerHTML=nav()
+document.querySelector("footer").innerHTML=footer()
+
+    const otpInputs = document.querySelectorAll('.otp-inputs input');
+    const verifyBtn = document.querySelector('#verify-btn');
+
+  otpInputs.forEach((input, index) => {
+    input.addEventListener('input', (event) => {
+        if (event.target.value && index < otpInputs.length - 1) {
+            otpInputs[index + 1].focus();
+        } else if (!event.target.value && index > 0) {
+            otpInputs[index - 1].focus();
+        }
+    });
+});
+
+verifyBtn.addEventListener('click', () => {
+  event.preventDefault()
+    const otpValue = Array.from(otpInputs).map(input => input.value).join('');
+    if (otpValue === '') {
+        alert('Please enter the OTP');
+      
+    } else {
+      window.location.href="paysucc.html";
+        console.log("wwwwwwwww");
+    }
+});
+
+</script>

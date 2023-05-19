@@ -268,9 +268,14 @@
   }
       
     </style>
+       <link rel="stylesheet" href="footer.css">
+       <link rel="stylesheet" href="navbar.css">
     <!-- <link rel="stylesheet" href="./fakecss.css"> -->
 </head>
 <body>
+    <nav>
+
+    </nav>
     <div id="big-box">
         <div id="container1">
             <h2>Need help planning your holiday?</h2>
@@ -377,10 +382,17 @@
             </div>
         </div>
      </div>
+<footer>
 
+</footer>
 </body>
 </html>
-<script>
+<script  type="module">
+
+import {nav,footer}from "./component/nav.js";
+document.querySelector("nav").innerHTML=nav()
+document.querySelector("footer").innerHTML=footer()
+
 
     document.getElementById("credit").addEventListener("click", ()=>
     {
@@ -412,15 +424,17 @@ function displayarr(data) {
   });
 }
 
+
 var z2 = JSON.parse(localStorage.getItem("obj")) ;
 var arr2 = [] ;
 arr2.push(z2) ;
 displayarr11(arr2);
 function displayarr11(data) {
   data.map(elem => {
-     document.getElementById("INR").textContent = elem.Total;
-     document.getElementById("USDT").textContent = Math.round(elem.Total/82.70);
-     document.getElementById("bitcoin").textContent= (elem.Total/2219042);
+     document.getElementById("INR").textContent ="₹ " +  elem.Total;
+     document.getElementById("USDT").textContent ="$" +  Math.round(elem.Total/82.70);
+     document.getElementById("bitcoin").textContent = "&#50896" +  (elem.Total / 2219042).toFixed(4);
+
   });
 }
 

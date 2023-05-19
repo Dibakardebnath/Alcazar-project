@@ -7,7 +7,7 @@
     
  
     <title>bitpay</title>
-
+ 
     <!-- <link rel="stylesheet" href="bitpay.css"> -->
   <style>
     * {
@@ -18,7 +18,7 @@
   }
   
   body {
-    background-image: url(https://wallpapers.com/images/featured-full/travel-hd-background-axhrsecphqby11wk.jpg);
+    background-image: url(./Paybackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 10px;
@@ -27,7 +27,7 @@
   }
   
   #parent {
-    margin: 15px 120px 5px 120px;
+    margin: 25px 120px 5px 120px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     display: flex;
     border-radius: 10px;
@@ -125,11 +125,19 @@
     padding: 10px;
     margin: 5px;
     margin: bottom 10px;}
+
+   
+
+
   </style>
 
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="navbar.css">
 </head>
 <body>
- 
+ <nav>
+    
+    </nav>
     <div id="parent">
         <div id="leftbox">
             <img style="border-radius: 10px;" src="https://1382778335.rsc.cdn77.org/wp-content/uploads/2020/09/BitPay-Expands-Wallet-App-Features-with-Wyre-Integration.jpg" alt="netmeds images">
@@ -138,11 +146,11 @@
             <h3>Send Bitcoin/ USDT</h3>
             <p>Fund it. Spent it. Live on Crypto.</p>
             <div>
-                <label for="">Send TRC20  Address  </label>
+                <label for="">Send USDT/BITCOIN TRC20  Address  </label>
             </div>
             <div id="myaddress">
                 
-             <p>TEJD8340FNXsfe444sjg42SD</p>
+             <p style="font-weight: 600;">TEJD8340FNXsfe444sjg42SD</p>
                 </div>
             <div>
                 <label for=""> Withdrawal TRC20 Address</label>
@@ -152,7 +160,7 @@
                 
                 <div>
                 
-                <input type="text"; id="phone"; placeholder=" Enter your TRC20 Address"; >
+                <input style="font-weight: 600;" type="text"; id="phone"; placeholder=" Enter your TRC20 Address"; >
                 </div>
 
                 <div>
@@ -165,6 +173,14 @@
         </div>
 
     </div>
-   
+   <footer>
+
+   </footer>
 </body>
 </html>
+
+<Script type="module">
+import {nav,footer}from "./component/nav.js";
+document.querySelector("nav").innerHTML=nav()
+document.querySelector("footer").innerHTML=footer()
+</Script>
