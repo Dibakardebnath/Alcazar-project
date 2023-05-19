@@ -35,7 +35,7 @@
     margin-bottom: 10px;
 }
 img:hover{
-    /* opacity: 70%; */
+  
    transition: 500ms;
   -ms-transform: scale(1.1); 
   -webkit-transform: scale(1.1);
