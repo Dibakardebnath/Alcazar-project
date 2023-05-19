@@ -98,14 +98,44 @@ p{
     margin-top: 100px;
     text-align: center;
 }
-#page-number{
+#page-number1{
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    /* border: 1px solid;
     padding: 5%;
-    border-radius: 20px;
+    border-radius: 100%;
     padding-left:15px;
     padding-right: 15px;
-    background-color: rgb(19, 158, 212);
-    color: white;
+    /* background-color: rgb(19, 158, 212); */
+    /* border-color: gray;
+    color: rgb(26, 25, 25);  */
 
+}
+#page-number2{
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#page-number3{
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#page-number4{
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#page-number5{
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
 }
 #butn{
     display: flex;

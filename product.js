@@ -1,8 +1,16 @@
-let page=1;
+
+import {nav,footer}from "./component/nav.js";
+document.querySelector("nav").innerHTML=nav()
+document.querySelector("footer").innerHTML=footer()
+
+
+
+
 let container=document.getElementById("location");
 
 function display(data){
-    container.innerText="";
+  
+    container.innerHTML="";
     data.forEach((elem,i)=>{
         let div=document.createElement("div");
 
@@ -37,7 +45,7 @@ function addfun(elem){
     localStorage.setItem("id",JSON.stringify(elem));
 }
 
-const Fetch=async(page=1,limit=6)=>{
+const Fetch=async(page,limit=6)=>{
     try{
         let link=`https://alcazar-project-beckened-server.onrender.com/Frontpage?_page=${page}&_limit=${limit}`;
         let data= await fetch(link);
@@ -97,18 +105,7 @@ const Fetch=async(page=1,limit=6)=>{
                 console.log(err);
                 }
             }     
-    // const getData5=async(page=1,limit=6)=>{
-    //         try{
-    //             let link=`https://alcazar-project-beckened-server.onrender.com/Frontpage?_page=${page}&_limit=${limit}&id=7&id=8&id=9&id=10&id=11&id=12`;
-    //             let data= await fetch(link);
-    //             data= await data.json();
-    //                 onsole.log(data);
-    //             display(data);
-    //             }
-    //         catch(err){
-    //             console.log(err);
-    //             }
-    //         }   
+     
         const getData6=async(page=1,limit=6)=>{
             try{
                 let link=`https://alcazar-project-beckened-server.onrender.com/Frontpage?_page=${page}&_limit=${limit}&id=8&id=12&id=13&id=4&id=15&id=6`;
@@ -121,68 +118,156 @@ const Fetch=async(page=1,limit=6)=>{
                 console.log(err);
                 }
             }     
+
+
+            const searchdata=async(Country)=>{
+               
+                try{
+                   let link=`https://alcazar-project-beckened-server.onrender.com/Frontpage?Country=${Country}`;
+                   let data= await fetch(link);
+                   data= await data.json();
+                   console.log(data);
+                   display(data);
+                   }
+               catch(err){
+                   console.log(err);
+                   }
+           }
     //previous button
+    let page=0;
    
     const previous=()=>{
-        if(page===1){
-        alert("No Previous Page");
-        return;
-        }
-        let pgno=document.getElementById("page-number");
-        pgno.innerText="";
         page-=1;
-        pgno.innerText=page;
+        if(page===0){
+            alert("No Previous Page");
+            return;
+            }
+       
+        
+      
+          
+        console.log(page)
+        document.getElementById("page-number1").style.backgroundColor=""
+        document.getElementById("page-number2").style.backgroundColor=""
+        document.getElementById("page-number3").style.backgroundColor=""
+        document.getElementById("page-number4").style.backgroundColor=""
+        document.getElementById("page-number5").style.backgroundColor=""
+
+        var pgno1=document.getElementById("page-number1");
+        var pgno2=document.getElementById("page-number2");
+        var pgno3=document.getElementById("page-number3");
+        var pgno4=document.getElementById("page-number4");
+        var pgno5=document.getElementById("page-number5");
+    
+        if(page==1){
+            pgno1.style.backgroundColor="rgb(19, 158, 212)"
+        }
+        if(page==2){
+            pgno2.style.backgroundColor="rgb(19, 158, 212)"
+        }
+        if(page==3){
+            pgno3.style.backgroundColor="rgb(19, 158, 212)"
+        }
+        if(page==4){
+            pgno4.style.backgroundColor="rgb(19, 158, 212)"
+        }
+        if(page==5){
+            pgno5.style.backgroundColor="rgb(19, 158, 212)"
+        }
+
+
+
+
         Fetch(page,6);
      }
     //next button
 
     const next=()=>{
-        if(page==4){
-        alert("last page");
-        return;
-        }
-        let pgno=document.getElementById("page-number");
-        pgno.innerText="";
         page+=1;
-        pgno.innerText=page;
+        if(page==5){
+            alert("last page");
+            return;
+            }
+        console.log(page)
+        document.getElementById("page-number1").style.backgroundColor=""
+        document.getElementById("page-number2").style.backgroundColor=""
+        document.getElementById("page-number3").style.backgroundColor=""
+        document.getElementById("page-number4").style.backgroundColor=""
+        document.getElementById("page-number5").style.backgroundColor=""
+       
+       
+        var pgno1=document.getElementById("page-number1");
+        var pgno2=document.getElementById("page-number2");
+        var pgno3=document.getElementById("page-number3");
+        var pgno4=document.getElementById("page-number4");
+        var pgno5=document.getElementById("page-number5");
+    
+        if(page==1){
+            pgno1.style.backgroundColor="rgb(19, 158, 212)"
+        }
+        if(page==2){
+            pgno2.style.backgroundColor="rgb(19, 158, 212)"
+        }
+        if(page==3){
+            pgno3.style.backgroundColor="rgb(19, 158, 212)"
+        }
+        if(page==4){
+            pgno4.style.backgroundColor="rgb(19, 158, 212)"
+        }
+        if(page==5){
+            pgno5.style.backgroundColor="rgb(19, 158, 212)"
+        }
+        
+      
+        
+       
+        // pgno.innerText=page;
         Fetch(page,6);
      }
      const firstbtn=()=>{
         let btn=document.getElementById("first");
-        // btn.style.backgroundColor="rgb(19, 158, 212)"
-        // btn.style.color="white"
+       
         getData1();
      }
      const secondbtn=()=>{
         let btn=document.getElementById("second");
-        // btn.style.backgroundColor="rgb(19, 158, 212)"
-        // btn.style.color="white"
+       
         getData1();
      }
      const thirdbtn=()=>{
         let btn=document.getElementById("third");
-        // btn.style.backgroundColor="rgb(19, 158, 212)"
-        // btn.style.color="white"
+       
         getData2();
      }
      const fourbtn=()=>{
         let btn=document.getElementById("four");
-        // btn.style.backgroundColor="rgb(19, 158, 212)"
-        // btn.style.color="white"
+       
         getData3();
      }
      const fivebtn=()=>{
         let btn=document.getElementById("five");
-        // btn.style.backgroundColor="rgb(19, 158, 212)"
-        // btn.style.color="white"
+       
         getData4();
      }
      const sixbtn=()=>{
         let btn=document.getElementById("six");
-        // btn.style.backgroundColor="rgb(19, 158, 212)"
-        // btn.style.color="white"
+        
         getData6();
      }
+
+     const searchfun=(event)=>{
+        event.preventDefault()
+        console.log("yes")
+        let searchData=document.getElementById("input").value;
+        console.log(searchData)
+        localStorage.setItem("value",JSON.stringify(searchData))
+        
+        let ans=JSON.parse(localStorage.getItem("id"))
+        console.log(ans)
+        searchdata(searchData)
+        
+     }
+
     document.getElementById("prev").addEventListener("click",previous);
     document.getElementById("next").addEventListener("click",next);
     document.getElementById("first").addEventListener("click",firstbtn);
@@ -191,17 +276,11 @@ const Fetch=async(page=1,limit=6)=>{
     document.getElementById("four").addEventListener("click",fourbtn);
     document.getElementById("five").addEventListener("click",fivebtn);
     document.getElementById("six").addEventListener("click",sixbtn);
-    
 
-    // let buttons=document.querySelectorAll(".second")
-    // for (p in buttons) {
-    //     buttons[p].onclick = function() {
-    //         console.log('test')
-    //         buttons.forEach(function(btn){
-    //           btn.classList.remove('second');
-    //         })
-    //         this.classList.add('second');
-    //     }
-    // }
+    document.getElementById("search-btn").addEventListener("click",searchfun);
+
+   
     
     Fetch();
+
+  
