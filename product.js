@@ -52,6 +52,7 @@ function display(data){
     })
 }
 function addfun(elem){
+    window.location.href="cart.html"
     localStorage.setItem("id",JSON.stringify(elem));
 }
 
