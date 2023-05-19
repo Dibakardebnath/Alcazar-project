@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b90a60688f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <title>Cart Page</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        *{
+    font-family: 'Poppins', sans-serif;
+}
+#container{
+    width: 67%;
+    margin: auto;
+    /* background-color: yellow; */
+}
+#title p{
+    font-size:30px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+#title i{
+    margin-right: 10vh;
+    /* background-color: yellow; */
+}
+#title span{
+    margin-left: 5px;
+}
+#title span a{
+    text-decoration: none;
+    color: black;
+    text-decoration-line: underline;
+    margin-left: 20px;
+    /* background-color: red; */
+    margin-right: 50vh;
+}
+#title .share{
+   margin: auto;
+   padding: 10px 15px 10px 15px ;
+}
+#title .share:hover{
+   background-color: rgb(241, 241, 241);
+   cursor: pointer;
+   border-radius: 20px;
+}
+#images{
+    display: flex;
+    /* background-color: red; */
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    max-width: 130vh;
+    max-height: 47vh;
+}
+#images .first{
+    /* background-color: yellow; */
+    display: flex;
+}
+#images .first img{
+    border-radius: 20px 0 0 20px;
+    width: 100%;
+}
+#images .second{
+    /* background-color: yellow; */
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-left: 10px;
+} 
+#images .second img{
+    width: 100%;
+    margin: auto;
+}
+#images div img:hover{
+    opacity: 70%;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+#discription{
+    width: 63%;
+    margin: auto;
+    text-align: left;
+}
+#discription p:first-child::first-letter{
+    color: #209ee3;
+    font-weight: bold;
+    font-size: 100px;
+    float: left;
+    /* line-height: 8px; */
+    padding-right: 8px;
+    margin-top: -3px;
+}
+
+hr{
+    width: 65%;
+}
+#midContainer{
+    /* background-color: red; */
+    display: flex;
+    width: 135vh;
+    margin: auto;
+}
+#midContainer #left{
+    width: 60%;
+    height: 80vh;
+}
+#left >p{
+    /* background-color: red; */
+    font-size: 30px;
+    font-weight: 600;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.left-side{
+    background-color: #f0efe9;
+    width: 50vh;
+    height: 55vh;
+    margin: auto;
+    padding: 50px;
+}
+.left-side > div{
+    display: flex;
+    margin-bottom: 20px;
+}
+.left-side img{
+    width: 40px;
+    border-radius: 150px;
+    height: 40px;
+    margin: auto;
+}
+.left-side p{
+    margin: auto;
+    font-size: 15px;
+}
+.left-side div i{
+    /* background-color: rgb(12, 117, 209); */
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+}
+.left-side div span{
+    font-size: 15px;
+    /* background-color: white; */
+    margin-left: 30px;
+}
+.discription{
+    width: 90%;
+    /* background-color: red; */
+}
+.discription + a{
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.left-side div button{
+    font-size: 20px;
+    font-weight: 600;
+    color: #f0efe9;
+    background-color: black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#last_p{
+    font-size: 10px;
+    width: 80%;
+}
+#right{
+    /* background-color: red; */
+    margin: auto;
+    width: 60vh;
+}
+#right_box{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    /* background-color: white; */
+    width: 60%;
+    margin: auto;
+    height: 50vh;
+    border-radius: 20px;
+    padding: 20px;
+}
+#right_box button{
+    font-size: 15px;
+    background-color: #209ee3;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#right_box >p{
+    /* background-color: red; */
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+#right_title{
+    display: flex;
+    width: 30vh;
+    margin: auto;
+    margin-top: 30px;
+}
+#right_title i{
+    margin: auto;
+}
+#right_title p{
+    font-size: 20px;
+    margin: auto;
+    margin-left: 0px;
+}
+#right_date{
+    /* background-color: black; */
+    height: 5vh;
+    margin: auto;
+    padding: 20px 0 20px 0 ;
+}
+#right_date input{
+    font-size: 20px;
+    padding: 10px;
+    width: 110px;
+    height: 4vh;
+    border-radius: 10px;
+    margin: 10px 0 20px 15px;
+    cursor: pointer;
+}
+#total{
+    display: flex;
+    /* background-color: red; */
+}
+#total p{
+    margin: auto;
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 600;
+}
+#total1{
+    display: flex;
+    /* background-color: red; */
+}
+#total1 p{
+    margin: auto;
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* ========================= Media Query ====================== */
+
+
+@media( max-width :1150px){
+    body{
+        /* background-color: red; */
+    }
+    #container{
+        width: 100%;
+        margin: auto;
+    }
+    #title i{
+        margin-right: 0%;
+    }
+    #title .share{
+       margin: auto;
+       padding: 10px 15px 10px 15px ;
+    }
+    #midContainer{
+        /* background-color: red; */
+        width: 80%;
+    }
+    #midContainer #left{
+        height: 100vh;
+        /* background-color: yellow; */
+        width: 50%;
+    }
+    #left >p{
+        font-size: 25px;
+    }
+    .left-side{
+        /* background-color: #f0efe9; */
+        width: 100%;
+        height: 70vh;
+        padding: 0px;
+    }
+    .left-side p{
+        margin: auto;
+        font-size: 15px;
+    }
+    .left-side div i{
+        width: 70%;
+        margin: auto;
+        font-size: 20px;
+    }
+    .left-side div span{
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    #right{
+        /* background-color: red; */
+        margin: auto;
+        width: 50vh;
+        margin-top: 60px;
+    }
+    #right_box{
+        height: 50vh;
+        padding: 20px;
+        /* background-color: yellow; */
+    }
+    #right_box button{
+        font-size: 15px;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    #right_box >p{
+        /* background-color: red; */
+        width: 30vh;
+        margin-top: 20px;
+    }
+    #right_title{
+        /* background-color: red; */
+        width: 30vh;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #right_title i{
+        margin: auto;
+    }
+    #right_title p{
+        font-size: 20px;
+        margin: auto;
+        margin-left: 0px;
+    }
+    #right_date input{
+        font-size: 15px;
+        padding: 10px;
+        width: 30%;
+        height: 4vh;
+        border-radius: 10px;
+        margin: 20px 0 20px 15px;
+    }
+    #total p{
+        margin-top: 20px;
+    }
+    #total1 p{
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media( max-width :780px){
+    body{
+        /* background-color: red; */
+    }
+    #container{
+        width: 60vh;
+        margin: auto;
+        /* background-color: yellow; */
+    }
+    #title p{
+        font-size:20px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+    #title i{
+        margin-right: 0px;
+        /* background-color: yellow; */
+        font-size: 11px;
+    }
+    #title span{
+        margin-left: 5px;
+    }
+    #title span a{
+        text-decoration: none;
+        color: black;
+        text-decoration-line: underline;
+        margin-left: 20px;
+        /* background-color: red; */
+        margin-right: 0vh;
+    }
+    #title .share{
+       margin: auto;
+       /* background-color: blue; */
+       padding: 5px 10px 5px 10px ;
+    }
+    #images{
+        display: block;
+        /* background-color: red; */
+        margin: auto;
+        padding: 10px;
+        max-width: 60vh;
+        max-height: 100vh;
+    }
+    #images .first{
+        /* background-color: yellow; */
+        display: flex;
+    }
+    #images .first img{
+        border-radius: 0px;
+        /* width: 70%; */
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    #images .second{
+        /* background-color: yellow; */
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin-left: 0px;
+    } 
+    #images .second img{
+        margin: auto;
+        /* width: 70%; */
+    }
+    #images div img:hover{
+        opacity: 70%;
+        cursor: pointer;
+        transition: 500ms;
+    }
+    
+    #discription{
+        width: 50vh;
+        margin: auto;
+        text-align: left;
+    }
+    
+    hr{
+        width: 65%;
+    }
+    #midContainer{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    #midContainer #left{
+        /* background-color: red; */
+        width: 100%;
+        height: 100%;
+    }
+    #left >p{
+        /* background-color: red; */
+        font-size: 30px;
+        font-weight: 600;
+        width: 30vh;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .left-side{
+        background-color: #f0efe9;
+        width: 50vh;
+        height: 100%;
+        margin: auto;
+        padding: 50px;
+    }
+    .left-side > div{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .left-side img{
+        width: 40px;
+        border-radius: 150px;
+        height: 40px;
+        margin: auto;
+    }
+    .left-side p{
+        margin: auto;
+        font-size: 20px;
+    }
+    .left-side div i{
+        width: 70%;
+        margin: auto;
+        font-size: 20px;
+    }
+    .left-side div span{
+        font-size: 15px;
+        /* background-color: white; */
+        margin-left: 30px;
+    }
+    .discription{
+        width: 90%;
+        /* background-color: red; */
+    }
+    .discription + a{
+        margin-left: 30px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .left-side div button{
+        font-size: 20px;
+        font-weight: 600;
+        color: #f0efe9;
+        background-color: black;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+        margin-left: 25px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    #last_p{
+        font-size: 10px;
+        width: 80%;
+    }
+    #right{
+        /* background-color: red; */
+        width: 45vh;
+        height: 100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    #right_box{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        /* background-color: white; */
+        width: 100%;
+        margin: auto;
+        height: 100%;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    #right_box button{
+        font-size: 20px;
+        background-color: #209ee3;
+        color: white;
+        font-weight: 600;
+        padding: 10px 20px 10px 20px;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 70px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    #right_title{
+        display: flex;
+        width: 40vh;
+        margin: auto;
+        margin-top: 60px;
+        /* background-color: red; */
+    }
+    #right_title p{
+        font-size: 20px;
+        margin: auto;
+        margin-left: 0px;
+    }
+    #right_title i{
+        margin: auto;
+    }
+    #right_box >p{
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+   
+    
+    #right_date{
+        /* background-color: black; */
+        height: 5vh;
+        margin: auto;
+        padding: 20px 0 20px 0 ;
+    }
+    #right_date input{
+        font-size: 20px;
+        padding: 10px;
+        width: 130px;
+        height: 4vh;
+        border-radius: 10px;
+        margin: 30px 0 20px 15px;
+        cursor: pointer;
+    }
+    #total{
+        display: flex;
+        /* background-color: red; */
+    }
+    #total p{
+        margin: auto;
+        margin-top: 40px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    #total1{
+        display: flex;
+        /* background-color: red; */
+    }
+    #total1 p{
+        margin: auto;
+        margin-top: 40px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+@media( max-width :470px){
+    body{
+        /* background-color: red; */
+    }
+    #container{
+        width: 60vh;
+        margin: auto;
+        /* background-color: yellow; */
+    }
+    #title p{
+        font-size:20px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+    #title i{
+        margin-right: 0px;
+        /* background-color: yellow; */
+        font-size: 11px;
+    }
+    #title span{
+        margin-left: 5px;
+    }
+    #title span a{
+        text-decoration: none;
+        color: black;
+        text-decoration-line: underline;
+        margin-left: 0px;
+        /* background-color: red; */
+        margin-right: 0vh;
+    }
+    #title .share{
+       margin: auto;
+       /* background-color: blue; */
+       padding: 5px 10px 5px 10px ;
+    }
+    #images{
+        display: block;
+        /* background-color: red; */
+        width: 60vh;
+        margin: auto;
+        padding: 10px;
+        max-width: 200vh;
+        max-height: 100vh;
+    }
+    #images .first{
+        /* background-color: yellow; */
+        display: flex;
+    }
+    #images .first img{
+        border-radius: 0px;
+        /* width: 70%; */
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    #images .second{
+        /* background-color: yellow; */
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin-left: 0px;
+    } 
+    #images .second img{
+        margin: auto;
+        /* width: 70%; */
+    }
+    #images div img:hover{
+        opacity: 70%;
+        cursor: pointer;
+        transition: 500ms;
+    }
+    
+    #discription{
+        width: 60vh;
+        margin: auto;
+        text-align: left;
+        /* background-color: red; */
+        margin-left: 10px;
+    }
+    
+    hr{
+        width: 65%;
+    }
+    #midContainer{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    #midContainer #left{
+        /* background-color: red; */
+        width: 100%;
+        height: 100%;
+    }
+    #left >p{
+        /* background-color: red; */
+        font-size: 30px;
+        font-weight: 600;
+        width: 30vh;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .left-side{
+        background-color: #f0efe9;
+        width: 48vh;
+        height: 100%;
+        margin: auto;
+        padding: 50px;
+    }
+    .left-side > div{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .left-side img{
+        width: 40px;
+        border-radius: 150px;
+        height: 40px;
+        margin: auto;
+    }
+    .left-side p{
+        margin: auto;
+        font-size: 15px;
+    }
+    .left-side div i{
+        width: 100%;
+        margin: auto;
+        font-size: 20px;
+        /* background-color: white; */
+    }
+    .left-side div span{
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    .discription{
+        width: 90%;
+        /* background-color: red; */
+    }
+    .discription + a{
+        margin-left: 30px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .left-side div button{
+        font-size: 20px;
+        font-weight: 600;
+        color: #f0efe9;
+        background-color: black;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+        margin-left: 25px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    #last_p{
+        font-size: 10px;
+        width: 80%;
+    }
+    #right{
+        /* background-color: red; */
+        width:50vh;
+        height: 100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    #right_box{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        /* background-color: white; */
+        width: 100%;
+        margin: auto;
+        height: 100%;
+        border-radius: 20px;
+        padding: 20px;
+        margin-left: 20px;
+    }
+    #right_box button{
+        font-size: 20px;
+        background-color: #209ee3;
+        color: white;
+        font-weight: 600;
+        padding: 10px 20px 10px 20px;
+        width: 50vh;
+        border-radius: 10px;
+        margin-top: 70px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    #right_title{
+        display: flex;
+        width: 40vh;
+        margin: auto;
+        margin-top: 60px;
+        /* background-color: red; */
+    }
+    #right_title p{
+        font-size: 20px;
+        margin: auto;
+        margin-left: 0px;
+    }
+    #right_title i{
+        margin: auto;
+    }
+    #right_box >p{
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+   
+    
+    #right_date{
+        /* background-color: black; */
+        height: 5vh;
+        margin: auto;
+        padding: 20px 0 20px 0 ;
+    }
+    #right_date input{
+        font-size: 20px;
+        padding: 10px;
+        width: 130px;
+        height: 4vh;
+        border-radius: 10px;
+        margin: 30px 0 20px 15px;
+        cursor: pointer;
+    }
+    #total{
+        display: flex;
+        /* background-color: red; */
+    }
+    #total p{
+        margin: auto;
+        margin-top: 40px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    #total1{
+        display: flex;
+        /* background-color: red; */
+    }
+    #total1 p{
+        margin: auto;
+        margin-top: 40px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="title">
+            <p id="container_title_p">Plan City Adventures from a Surry Hills Balcony</p>
+            <i class="fa-solid fa-star"><span>4.92 . 597 reviews<a href="#">Surry Hills, New South Wales, Australia</a></span></i>
+            <i class="fa-solid fa-arrow-up-from-bracket share"><span>Share</span></i>
+            <i class="fa-regular fa-heart share" ><span>Save</span></i>
+            </div>
+        </div>
+        <div id="images">
+            <div class="first">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-2694793/original/a6d39bc6-9564-4503-8b84-c796ecda03af.jpeg?im_w=1200" alt="">
+            </div>
+            <div class="second">
+                <img src="https://a0.muscache.com/im/pictures/a0b3e1d3-2e64-421b-b021-98e1973f9cfe.jpg?im_w=720" alt="">
+                <img src="https://a0.muscache.com/im/pictures/749528e3-d251-4ee7-aa24-4b13604e7501.jpg?im_w=720" alt="">
+                <img src="https://a0.muscache.com/im/pictures/a0b3e1d3-2e64-421b-b021-98e1973f9cfe.jpg?im_w=720" alt="">
+                <img src="https://a0.muscache.com/im/pictures/a0b3e1d3-2e64-421b-b021-98e1973f9cfe.jpg?im_w=720" alt="">
+            </div>
+        </div>
+        <div id="discription">
+            <p>The Dome is a one bedroom bamboo villa built on two floors. Its ground floor houses an open air living room fitted with a dining area, a seating area and balinese style hammock.The living room has direct access to a spacious balinese style garden and the beautiful Santorini style infinity pool.Amenities in the living room include a projector with Netflix, Nespresso coffee machine and refrigerated minibar.The master bedroom on the upper floor is fitted with a king size bed, a walk-in wardrobe, air conditioning, an in-room bathtub from where our guests can enjoy the beautiful rice fields views and a balcony overlooking the famous volcano Mount Agung. The bedroom houses a modernly equipped bathroom.</p>
+        </div>
+    </div>
+    <hr>
+    <div id="midContainer">
+        <div id="left">
+            <p>Meet your Host</p>
+            <div class="left-side">
+                <div>
+                    <p>Room in a home hosted by Bron</p>
+                    <img src="https://a0.muscache.com/im/pictures/user/33304422-5c16-4c24-aac6-675348235ab2.jpg?im_w=240" alt="">
+                </div>
+                <div>
+                    <i class="fa-regular fa-face-smile"><span>My work: Business owner</span></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-face-smile"><span>Fun fact: I like cars and racing</span></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-clock"><span>I spend too much time in travel</span></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-face-smile-wink"><span>I always: Make friends</span></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-face-smile"><span>I like to spend time with guests</span></i>
+                </div>
+                <p class="discription">
+                    Easy going person who loves my family, pets, friends & gorgeous neighbourhood of Surry Hills. I really look forward to sharing my home and enthusiasm for the beautiful city of Sydney with guests.
+                </p>
+                <a href="">Show more <span> ></span></a>
+                <div>
+                    <button>Message Host</button>
+                </div>
+                <hr>
+                <p id="last_p">To protect your payment, never transfer money or communicate outside of the Airbnb website or app.</p>
+            </div>
+        </div>
+        <div id="right">
+            <div id="right_box">
+                <div id="right_title">
+                    <p style="font-weight: 600;">₹8,181 <span style="font-size: 10px;"> night</span></p>
+                    <i class="fa-solid fa-star"><span>4.92 <a href="#">. 597 reviews</a></span></i>
+                </div>
+                <div id="right_date">
+                    <input type="text" id="date1" placeholder="Start Date">
+                    <input type="text" id="date2" placeholder="End Date">
+                </div>
+                <button type="submit" id="submit" value="submit">Proceed</button>
+                <hr>
+                <p>You won't be charged yet</p>
+                <div id="total">
+                    <p id="total_amount">₹ Amount x <span>n nighs</span></p>
+                    <p>₹ total</p>
+                </div>
+                <div id="total1">
+                    <p>Alcazar service fee (10%)</p>
+                    <p>₹ total</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
+
+
+<script>
+    import {nav,footer}from "./component/nav.js";
+document.querySelector("nav").innerHTML=nav()
+document.querySelector("footer").innerHTML=footer()
+    //  var arr = [
+    // {
+    //     "id":16,
+    //     "Country":"Thiland",
+    //     "name":"Balian Beach, Thiland",
+    //     "url":"https://a0.muscache.com/im/pictures/530437c7-98f3-4c0e-8de3-d990575c0a0f.jpg?im_w=720",
+    //     "description":"The Balian treehouse is only a 3 minute walk away from the beach.",
+    //     "cost":"43201","title":"Hut hosted by Made",
+    //     "heading":"BALIAN TREEHOUSE w beautiful pool",
+    //     "urls":"https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=960",
+    //     "url1":"https://a0.muscache.com/im/pictures/miso/Hosting-1016153/original/5e249106-66d9-4638-99aa-6b8fc38f3203.jpeg?im_w=720",
+    //     "url2":"https://a0.muscache.com/im/pictures/0b25f6b3-f215-4938-ac81-581eb3929047.jpg?im_w=720",
+    //     "url3":"https://a0.muscache.com/im/pictures/9833de62-35b7-41f2-8a24-0d9354150ea7.jpg?im_w=720",
+    //     "url4":"https://a0.muscache.com/im/pictures/de73abc2-5dc9-4962-ba32-5d28211cdde0.jpg?im_w=720",
+    //     "guestDetail":"4 guests2-bedrooms2-beds2-bathrooms",
+    //     "description1":"We have several hangouts in our garden, and our pool is beautiful lit in the evening and turquoise in the daytime just inviting you to jump in. Upstairs is the open living area. The lazy couch on the veranda is overlooking the palm trees (TREEHOUSE) our beautiful garden and pool and has some ocean view aswell. It's the perfect place to wake up and relax drinking your coffee or tea. You can enjoy a nice ocean breeze when you feel its too warm to be outside in the sun or just when you feel the need to be nicely lazy..Inside there is a big (180 x 240) daybed with mosquito net if you need it. Downstairs there is the bedroom, kitchenette, bathroom and a second veranda. We have a rain shower with hot water, there is a standing fan and AC in the bedroom. In the bedroom there is a Flatscreen TV with some channels and movies on demand. The TV has a USB plug so you could take your favo movies or series to watch. We also have a dvd player. We use Indihome fiber for the quickest internet in Bali, so you can stream and download.When arriving at his lovely and special village, you immediately feel all the good Bali has to offer you. Balian is a small surfer/relax village it feels like the older days in Bali.We build the house as green as possible with a lot of decoration found in the nature, like the driftwood from the beach. I put a lot of blood, sweat, fun and tears in building this house. We are always busy expanding and updating the house which has to be done living near the ocean!!Although Made and his wife come to ."
+    // },
+    // ]
+    
+    var z = JSON.parse(localStorage.getItem("id"))  ;
+
+    var arr = [] ;
+    arr.push(z) ;
+    console.log(arr) ;
+    Shiva(arr) ;
+    function Shiva(arr){
+        document.getElementById("title").textContent = "" ;
+        document.getElementById("images").textContent = "" ;
+        document.getElementById("discription").textContent = "" ;
+        document.getElementById("right_title").textContent = "" ;
+        
+        arr.map((ele) => {
+            var title = document.createElement("div") ;
+            title.id = "title" ;
+
+            var p1 = document.createElement("p") ;
+            p1.innerText = ele.title ;
+
+            var i1 = document.createElement("i") ;
+            i1.className = "fa-solid fa-star" ;
+            var span1 = document.createElement("span") ;
+            span1.textContent = "4.92 . 597 reviews" ;
+            var a1 = document.createElement("a") ;
+            a1.textContent = ele.name ;
+            a1.href = "#" ;
+            
+            i1.appendChild(span1) ;
+            span1.appendChild(a1) ;
+            
+            var i2 = document.createElement("i") ;
+            i2.className = "fa-solid fa-arrow-up-from-bracket share" ;
+            var span2 = document.createElement("span") ;
+            span2.textContent = "Share" ;
+            
+            i2.appendChild(span2) ;
+            
+            var i3 = document.createElement("i") ;
+            i3.className = "fa-regular fa-heart share" ;
+            
+            var span3 = document.createElement("span") ;
+            span3.textContent = "Save" ;
+            
+            i3.appendChild(span3) ;
+
+            title.append(p1,i1,i2,i3) ;
+            document.getElementById("title").append(title) ;
+
+            // ==============================title=================================
+
+            var d3 = document.createElement("div") ;
+            d3.className = "first" ; 
+            var img = document.createElement("img") ;
+            img.setAttribute("src",ele.url) ;
+            d3.append(img) ;
+
+            var d4 = document.createElement("div") ;
+            d4.className = "second" ;
+            var img1 = document.createElement("img") ;
+            img1.setAttribute("src",ele.url1) ;
+            var img2 = document.createElement("img") ;
+            img2.setAttribute("src",ele.url2) ;
+            var img3 = document.createElement("img") ;
+            img3.setAttribute("src",ele.url3) ;
+            var img4 = document.createElement("img") ;
+            img4.setAttribute("src",ele.url4) ;
+            d4.append(img1,img2,img3,img4) ;
+
+            document.getElementById("images").append(d3,d4) ;
+
+            var p6 = document.createElement("p") ;
+            p6.textContent = ele.description1 ;
+            document.getElementById("discription").append(p6) ;
+
+            // ========================proceed to payment ===========================
+
+            var p = document.createElement("p") ;
+            p.style.fontWeight = "600" ;
+            p.textContent = "₹ "+ele.cost ;
+            var span4 = document.createElement("span") ;
+            span4.style.fontSize = "10px" ;
+            span4.textContent = " night" ;
+            p.appendChild(span4) ;
+
+            var i4 = document.createElement("i") ;
+            i4.className = "fa-solid fa-star" ;
+            var span5 = document.createElement("span") ;
+            span5.textContent = " 4.92" ;
+            var a = document.createElement("a") ;
+            a.textContent = " . 597 reviews" ;
+            a.href = "#"
+            span5.appendChild(a) ;
+            i4.appendChild(span5) ;
+
+            document.getElementById("right_title").append(p,i4) ;
+
+            document.getElementById("submit").addEventListener("click",Shiva2) ;
+            var count = 0 ;
+            var Total = 0 ;
+            function Shiva2(){
+                
+                document.getElementById("total").textContent = "" ;
+                var st = document.getElementById("date1").value ;
+                var end = document.getElementById("date2").value ;
+                // console.log(end-st) ;
+
+                var p2 = document.createElement("p") ;
+                p2.textContent = "₹ "+ele.cost +" x ";
+                var span6 = document.createElement("span") ;
+                span6.textContent = end-st +" nights" ;
+                p2.appendChild(span6) ;
+
+                var p3 = document.createElement("p") ;
+                Total = (end-st)*ele.cost ;
+                p3.textContent = "₹ "+ Total;
+
+                document.getElementById("total").append(p2,p3) ;
+
+
+                document.getElementById("total1").textContent = "" ;
+
+                var p4 = document.createElement("p") ;
+                p4.textContent = "Alcazar service fee (10%)";
+
+                var p5 = document.createElement("p") ;
+                p5.textContent = Total*10/100 ;
+
+                var but = document.getElementById("submit") ;
+                but.textContent = "Proceed to Payment ( "+Total*110/100+" )" ;
+
+                document.getElementById("total1").append(p4,p5) ;
+                if ( count > 0 ){
+                    window.location.href = "fakepay.html" ;
+                }
+                count++ ;
+
+               var obj = {
+                    st : st ,
+                    end : end,
+                    Total : Total,
+                    nights : (end-st)
+                }
+                console.log(obj) ;
+                localStorage.setItem("obj",JSON.stringify(obj)) ;
+            }
+        })
+    }
+    
+</script>
