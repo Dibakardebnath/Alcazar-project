@@ -15,15 +15,18 @@
             justify-content: center;
         }
 
+
         #big-box {
             width: 80%;
             background: #f8f8f8;
             display: flex;
             justify-content: center;
             margin-top: 150px;
+            border-radius: 6px;
         }
 
         #container1 {
+            margin-top: 22px;
             width: 50%;
             display: flex;
             flex-direction: column;
@@ -61,6 +64,7 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             font-size: 16px;
+            border-radius: 5px;
         }
 
         #container1 input[type="checkbox"] {
@@ -99,6 +103,30 @@
             display: flex;
             justify-content: space-around;
         }
+
+        @media screen and (max-width: 850px) {
+   #big-box
+   {
+    width: 100%;
+    /* flex-direction: column; */
+   }
+  }
+
+  @media screen and (max-width: 700px) {
+   #big-box
+   {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+   }
+
+
+   #container1
+   {
+    width: 80%;
+   
+   }
+  }
       
     </style>
     <link rel="stylesheet" href="./fakecss.css">
@@ -133,8 +161,8 @@
                 </div>
              
                 <div>
-               <h2>Destination Name</h2>
-               <p>you can explore attractions in Delhi such as Red Fort, India Gate, Rashtrapati Bhawan, Jama Masjid, Jantar Mantar, ISKCON Temple, Raj</p>
+               <h2 id="tilteName">Destination Name</h2>
+               <p id="discription">you can explore attractions in Delhi such as Red Fort, India Gate, Rashtrapati Bhawan, Jama Masjid, Jantar Mantar, ISKCON Temple, Raj</p>
                 </div>
             </div>
 
@@ -148,41 +176,22 @@
             <div id="value-list">
                 <h5>INR</h3>
                     <p>  &#x2194;</p>
-                <h5>1200</h3>
+                <h5 id="INR">1200</h3>
             </div>
             <div id="value-list">
                 <h5>USDT</h3>
                     <p>	&#x2194;</p>
-                <h5>$13</h3>
+                <h5 id="USDT">$13</h3>
             </div>
 
             <div id="value-list">
                 <h5>BITCOIN</h5>
                 <p>	&#x2194;</p>
-                    <!-- <img src="https://www.shutterstock.com/image-vector/black-arrow-pointing-right-shape-260nw-1948031761.jpg" alt=""> -->
-                <h5>0.0002</h3>
+               
+                <h5 id="bitcoin">0.0002</h3>
             </div>
             </div>
 
-            <!-- <div id="payment-details">
-                <div class="payment">
-                    <h3>Curruncy</h3>
-                    <p class="amount">Payment Value</p>
-                </div>
-                
-                <div class="payment">
-                    <h3>Credit Card</h3>
-                    <p class="amount">$122</p>
-                </div>
-                <div class="payment">
-                    <h3>PayPal</h3>
-                    <p class="amount">$343</p>
-                </div>
-                <div class="payment">
-                    <h3>Bitcoin</h3>
-                    <p class="amount">$00.004</p>
-                </div>
-            </div> -->
             <div id="credit-bit-usdt">
                 <div>
                 <h4> <b>CLICK</b>  on the method you want to <b>PAY</b> </h4>
@@ -217,7 +226,7 @@
                 </div>
                 <div class="ICICI">
                     <a href="https://www.icicibank.com/"><img src="https://www.netmeds.com/assets/pgicon/pay_icici_new.png" alt=""></a>
-                    <p>ICICI<br>Netbanking</p>
+                    <p>ICICI</p>
                 </div>
                 <div class="kotak">
                     <a href="https://www.kotak.com/en/home.html"><img src="https://www.netmeds.com/assets/pgicon/pay_kotak_new.png" alt=""></a>
@@ -234,8 +243,26 @@
 </body>
 </html>
 <script>
+
     document.getElementById("credit").addEventListener("click", ()=>
     {
         window.location.href="./payment.html"
     })
+
+    var arr = JSON.parse(localStorage.getItem("key")) || [];
+displayarr(arr);
+
+
+function displayarr(data) {
+  data.map(elem => {
+    document.getElementById("INR").textContent = elem.Total;
+    document.getElementById("USDT").textContent = (elem.Total/82.70);
+    document.getElementById("bitcoin").textContent=(elem.Total/22,19,042);
+   document.getElementById("titleName").textContent=elem.name;
+   document.getElementById("discription").textContent=elem.discription;
+   document.getElementById("image").textContent=elem.urls;
+  });
+}
+ 
+
 </script>

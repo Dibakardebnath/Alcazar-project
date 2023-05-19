@@ -4,7 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: 'Poppins', sans-serif; 
 }
 
 body {
@@ -82,7 +83,7 @@ body {
 
 .btn{
   margin-top: 40px;
-  background: #2196F3;
+  background: #209ee3;
   padding: 12px;
   text-align: center;
   color: #f8f8f8;
