@@ -1,3 +1,9 @@
+body{
+    background-image: url(test.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
 .container{
     height:500px;
    max-width: 25%;
@@ -55,7 +61,7 @@
     /* box-shadow: 0px 0px 5px 0px rgb(51, 43, 43); */
 }
 .h1{
-    color:#100d0e;
+    color:#209ee3;
     text-decoration: none;
 }
 .h2{
