@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f8f8f8;
+	font-family:Arial, sans-serif;
+	letter-spacing: 0.5px;
+	font-size: 16px;
+	line-height: 24px;
+
+	
+}
+#main{
+	width: 500px;
+	max-height: 50px;
+	background-color:#f5f5f5;
+	padding: 10px;
+
+}
+
+.container {
+	max-width: 500px;
+    max-height: 500px;
+	margin: 50px auto;
+	background-color: #fff;
+	padding: 0px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+	margin-bottom: 0px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+label {
+	margin-bottom: 5px;
+	display: none;
+}
+
+input {
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+button {
+	background-color: rgb(0, 0, 0);
+	color: #fff;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+	text-align: center;
+	
+}
+.btnSign{
+	padding-left: 87px;
+	padding-right: 87px;
+	
+}
+.first{
+    width: 200px;
+    height: 34px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: rgb(2, 2, 2);
+	border: 1px solid black;
+}
+.first:hover{
+	background-color: #757575;
+}
+
+#forgot-password{
+    margin-bottom: 20px;
+}
+
+button:hover {
+	background-color: #757575;
+}
+
+.links {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+a {
+	color: #036ad8;
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+	color: rgb(1, 1, 1);
+}
+#lastCont{
+	display: flex;
+	justify-content: space-between;	
+}
+.try{
+	color: black;
+	text-align: center;
+	padding-top:5px;
+}

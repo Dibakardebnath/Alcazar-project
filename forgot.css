@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+	max-width: 300px;
+    max-height: 300px;
+	margin: 50px auto;
+	background-color: #fff;
+	padding: 0px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+form {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+input {
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+button {
+	background-color: rgb(0, 0, 0);
+	color: #fff;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+	text-align: center;
+	
+}
+button:hover {
+	background-color: #757575;
+}
+#message {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  label{
+    display: none;
+  }
+  #message.show {
+    display: block;
+  }
+  

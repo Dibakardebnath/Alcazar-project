@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OTP Verification</title>
+  <link rel="stylesheet" type="text/css" href="otp.css">
+</head>
+
+<body>
+    
+  <div class="container">
+  
+    <img id="imag"src="https://constant.myntassets.com/pwa/assets/img/3a438cb4-c9bf-4316-b60c-c63e40a1a96d1548071106233-mobile-verification.jpg" alt="">
+<h2 class="h3">Verify with Otp</h2>
+<div id="div" class="userInput" >
+    <input id="ist" type="text"  maxlength="1"  onkeyup="move(event,'','ist','sec')">
+    <input id="sec" type="text" maxlength="1" onkeyup="move(event,'ist','sec','third')">
+    <input id="third" type="text" maxlength="1" onkeyup="move(event,'sec','third','fourth')">
+    <input id="fourth" type="text" maxlength="1" onkeyup="move(event,'third','fourth','')">
+</div>
+<h5 ><a href="signup.html" class="h3 h1"> RESEND OTP</a></h5>
+<h5 class="h3">Wrong Mobile Number <a class="h3 h1 h2" href="signin.html">Edit</a></h5>
+<h5 class="h3">Haveing trouble logging in ? <b class="h1 h2">Get Help</b></h5>
+</div>
+
+  <script src="otp.js"></script>
+</body>
+</html>
