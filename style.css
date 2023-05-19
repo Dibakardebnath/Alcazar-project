@@ -45,18 +45,14 @@
     max-height: 47vh;
 }
 #images .first{
-    
     /* background-color: yellow; */
     display: flex;
-    /* overflow: hidden; */
 }
 #images .first img{
     border-radius: 20px 0 0 20px;
     width: 100%;
 }
 #images .second{
-    /* max-width: 70vh;
-    max-height: 47vh; */
     /* background-color: yellow; */
     overflow: hidden;
     display: grid;
@@ -74,6 +70,21 @@
     transition: 500ms;
 }
 
+#discription{
+    width: 63%;
+    margin: auto;
+    text-align: left;
+}
+#discription p:first-child::first-letter{
+    color: #209ee3;
+    font-weight: bold;
+    font-size: 100px;
+    float: left;
+    /* line-height: 8px; */
+    padding-right: 8px;
+    margin-top: -3px;
+}
+
 hr{
     width: 65%;
 }
@@ -88,12 +99,16 @@ hr{
     height: 80vh;
 }
 #left >p{
+    /* background-color: red; */
     font-size: 30px;
     font-weight: 600;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .left-side{
     background-color: #f0efe9;
-    /* background-color: aliceblue; */
     width: 50vh;
     height: 55vh;
     margin: auto;
@@ -134,7 +149,6 @@ hr{
     font-size: 20px;
 }
 .left-side div button{
-    /* background-color: red; */
     font-size: 20px;
     font-weight: 600;
     color: #f0efe9;
@@ -148,7 +162,6 @@ hr{
 #last_p{
     font-size: 10px;
     width: 80%;
-    /* background-color: red; */
 }
 #right{
     /* background-color: red; */
@@ -172,7 +185,7 @@ hr{
     padding: 10px 20px 10px 20px;
     width: 100%;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 70px;
     cursor: pointer;
     margin-bottom: 20px;
 }
@@ -184,11 +197,9 @@ hr{
 }
 #right_title{
     display: flex;
-    /* background-color: yellow; */
-    /* background-color: red; */
     width: 30vh;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 #right_title i{
     margin: auto;
@@ -210,7 +221,7 @@ hr{
     width: 130px;
     height: 4vh;
     border-radius: 10px;
-    margin: 20px 0 20px 15px;
+    margin: 30px 0 20px 15px;
     cursor: pointer;
 }
 #total{
@@ -232,4 +243,600 @@ hr{
     margin-top: 40px;
     font-size: 15px;
     font-weight: 600;
+}
+
+/* ========================= Media Query ====================== */
+
+
+@media( max-width :1150px){
+    body{
+        /* background-color: red; */
+    }
+    #container{
+        width: 100%;
+        margin: auto;
+    }
+    #title i{
+        margin-right: 0%;
+    }
+    #title .share{
+       margin: auto;
+       padding: 10px 15px 10px 15px ;
+    }
+    #midContainer{
+        /* background-color: red; */
+        width: 80%;
+    }
+    #midContainer #left{
+        height: 100vh;
+        /* background-color: yellow; */
+        width: 50%;
+    }
+    #left >p{
+        font-size: 25px;
+    }
+    .left-side{
+        /* background-color: #f0efe9; */
+        width: 100%;
+        height: 70vh;
+        padding: 0px;
+    }
+    .left-side p{
+        margin: auto;
+        font-size: 15px;
+    }
+    .left-side div i{
+        width: 70%;
+        margin: auto;
+        font-size: 20px;
+    }
+    .left-side div span{
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    #right{
+        /* background-color: red; */
+        margin: auto;
+        width: 50vh;
+        margin-top: 60px;
+    }
+    #right_box{
+        height: 50vh;
+        padding: 20px;
+        /* background-color: yellow; */
+    }
+    #right_box button{
+        font-size: 15px;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    #right_box >p{
+        /* background-color: red; */
+        width: 30vh;
+        margin-top: 20px;
+    }
+    #right_title{
+        /* background-color: red; */
+        width: 30vh;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #right_title i{
+        margin: auto;
+    }
+    #right_title p{
+        font-size: 20px;
+        margin: auto;
+        margin-left: 0px;
+    }
+    #right_date input{
+        font-size: 15px;
+        padding: 10px;
+        width: 30%;
+        height: 4vh;
+        border-radius: 10px;
+        margin: 20px 0 20px 15px;
+    }
+    #total p{
+        margin-top: 20px;
+    }
+    #total1 p{
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media( max-width :780px){
+    body{
+        /* background-color: red; */
+    }
+    #container{
+        width: 60vh;
+        margin: auto;
+        /* background-color: yellow; */
+    }
+    #title p{
+        font-size:20px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+    #title i{
+        margin-right: 0px;
+        /* background-color: yellow; */
+        font-size: 11px;
+    }
+    #title span{
+        margin-left: 5px;
+    }
+    #title span a{
+        text-decoration: none;
+        color: black;
+        text-decoration-line: underline;
+        margin-left: 20px;
+        /* background-color: red; */
+        margin-right: 0vh;
+    }
+    #title .share{
+       margin: auto;
+       /* background-color: blue; */
+       padding: 5px 10px 5px 10px ;
+    }
+    #images{
+        display: block;
+        /* background-color: red; */
+        margin: auto;
+        padding: 10px;
+        max-width: 60vh;
+        max-height: 100vh;
+    }
+    #images .first{
+        /* background-color: yellow; */
+        display: flex;
+    }
+    #images .first img{
+        border-radius: 0px;
+        /* width: 70%; */
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    #images .second{
+        /* background-color: yellow; */
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin-left: 0px;
+    } 
+    #images .second img{
+        margin: auto;
+        /* width: 70%; */
+    }
+    #images div img:hover{
+        opacity: 70%;
+        cursor: pointer;
+        transition: 500ms;
+    }
+    
+    #discription{
+        width: 50vh;
+        margin: auto;
+        text-align: left;
+    }
+    
+    hr{
+        width: 65%;
+    }
+    #midContainer{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    #midContainer #left{
+        /* background-color: red; */
+        width: 100%;
+        height: 100%;
+    }
+    #left >p{
+        /* background-color: red; */
+        font-size: 30px;
+        font-weight: 600;
+        width: 30vh;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .left-side{
+        background-color: #f0efe9;
+        width: 50vh;
+        height: 100%;
+        margin: auto;
+        padding: 50px;
+    }
+    .left-side > div{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .left-side img{
+        width: 40px;
+        border-radius: 150px;
+        height: 40px;
+        margin: auto;
+    }
+    .left-side p{
+        margin: auto;
+        font-size: 20px;
+    }
+    .left-side div i{
+        width: 70%;
+        margin: auto;
+        font-size: 20px;
+    }
+    .left-side div span{
+        font-size: 15px;
+        /* background-color: white; */
+        margin-left: 30px;
+    }
+    .discription{
+        width: 90%;
+        /* background-color: red; */
+    }
+    .discription + a{
+        margin-left: 30px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .left-side div button{
+        font-size: 20px;
+        font-weight: 600;
+        color: #f0efe9;
+        background-color: black;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+        margin-left: 25px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    #last_p{
+        font-size: 10px;
+        width: 80%;
+    }
+    #right{
+        /* background-color: red; */
+        width: 45vh;
+        height: 100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    #right_box{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        /* background-color: white; */
+        width: 100%;
+        margin: auto;
+        height: 100%;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    #right_box button{
+        font-size: 20px;
+        background-color: #209ee3;
+        color: white;
+        font-weight: 600;
+        padding: 10px 20px 10px 20px;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 70px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    #right_title{
+        display: flex;
+        width: 40vh;
+        margin: auto;
+        margin-top: 60px;
+        /* background-color: red; */
+    }
+    #right_title p{
+        font-size: 20px;
+        margin: auto;
+        margin-left: 0px;
+    }
+    #right_title i{
+        margin: auto;
+    }
+    #right_box >p{
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+   
+    
+    #right_date{
+        /* background-color: black; */
+        height: 5vh;
+        margin: auto;
+        padding: 20px 0 20px 0 ;
+    }
+    #right_date input{
+        font-size: 20px;
+        padding: 10px;
+        width: 130px;
+        height: 4vh;
+        border-radius: 10px;
+        margin: 30px 0 20px 15px;
+        cursor: pointer;
+    }
+    #total{
+        display: flex;
+        /* background-color: red; */
+    }
+    #total p{
+        margin: auto;
+        margin-top: 40px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    #total1{
+        display: flex;
+        /* background-color: red; */
+    }
+    #total1 p{
+        margin: auto;
+        margin-top: 40px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+@media( max-width :470px){
+    body{
+        /* background-color: red; */
+    }
+    #container{
+        width: 60vh;
+        margin: auto;
+        /* background-color: yellow; */
+    }
+    #title p{
+        font-size:20px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+    #title i{
+        margin-right: 0px;
+        /* background-color: yellow; */
+        font-size: 11px;
+    }
+    #title span{
+        margin-left: 5px;
+    }
+    #title span a{
+        text-decoration: none;
+        color: black;
+        text-decoration-line: underline;
+        margin-left: 0px;
+        /* background-color: red; */
+        margin-right: 0vh;
+    }
+    #title .share{
+       margin: auto;
+       /* background-color: blue; */
+       padding: 5px 10px 5px 10px ;
+    }
+    #images{
+        display: block;
+        /* background-color: red; */
+        width: 60vh;
+        margin: auto;
+        padding: 10px;
+        max-width: 200vh;
+        max-height: 100vh;
+    }
+    #images .first{
+        /* background-color: yellow; */
+        display: flex;
+    }
+    #images .first img{
+        border-radius: 0px;
+        /* width: 70%; */
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    #images .second{
+        /* background-color: yellow; */
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin-left: 0px;
+    } 
+    #images .second img{
+        margin: auto;
+        /* width: 70%; */
+    }
+    #images div img:hover{
+        opacity: 70%;
+        cursor: pointer;
+        transition: 500ms;
+    }
+    
+    #discription{
+        width: 60vh;
+        margin: auto;
+        text-align: left;
+        /* background-color: red; */
+        margin-left: 10px;
+    }
+    
+    hr{
+        width: 65%;
+    }
+    #midContainer{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    #midContainer #left{
+        /* background-color: red; */
+        width: 100%;
+        height: 100%;
+    }
+    #left >p{
+        /* background-color: red; */
+        font-size: 30px;
+        font-weight: 600;
+        width: 30vh;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .left-side{
+        background-color: #f0efe9;
+        width: 48vh;
+        height: 100%;
+        margin: auto;
+        padding: 50px;
+    }
+    .left-side > div{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .left-side img{
+        width: 40px;
+        border-radius: 150px;
+        height: 40px;
+        margin: auto;
+    }
+    .left-side p{
+        margin: auto;
+        font-size: 15px;
+    }
+    .left-side div i{
+        width: 100%;
+        margin: auto;
+        font-size: 20px;
+        /* background-color: white; */
+    }
+    .left-side div span{
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    .discription{
+        width: 90%;
+        /* background-color: red; */
+    }
+    .discription + a{
+        margin-left: 30px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .left-side div button{
+        font-size: 20px;
+        font-weight: 600;
+        color: #f0efe9;
+        background-color: black;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+        margin-left: 25px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    #last_p{
+        font-size: 10px;
+        width: 80%;
+    }
+    #right{
+        /* background-color: red; */
+        width:50vh;
+        height: 100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    #right_box{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        /* background-color: white; */
+        width: 100%;
+        margin: auto;
+        height: 100%;
+        border-radius: 20px;
+        padding: 20px;
+        margin-left: 20px;
+    }
+    #right_box button{
+        font-size: 20px;
+        background-color: #209ee3;
+        color: white;
+        font-weight: 600;
+        padding: 10px 20px 10px 20px;
+        width: 50vh;
+        border-radius: 10px;
+        margin-top: 70px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    #right_title{
+        display: flex;
+        width: 40vh;
+        margin: auto;
+        margin-top: 60px;
+        /* background-color: red; */
+    }
+    #right_title p{
+        font-size: 20px;
+        margin: auto;
+        margin-left: 0px;
+    }
+    #right_title i{
+        margin: auto;
+    }
+    #right_box >p{
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+   
+    
+    #right_date{
+        /* background-color: black; */
+        height: 5vh;
+        margin: auto;
+        padding: 20px 0 20px 0 ;
+    }
+    #right_date input{
+        font-size: 20px;
+        padding: 10px;
+        width: 130px;
+        height: 4vh;
+        border-radius: 10px;
+        margin: 30px 0 20px 15px;
+        cursor: pointer;
+    }
+    #total{
+        display: flex;
+        /* background-color: red; */
+    }
+    #total p{
+        margin: auto;
+        margin-top: 40px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    #total1{
+        display: flex;
+        /* background-color: red; */
+    }
+    #total1 p{
+        margin: auto;
+        margin-top: 40px;
+        font-size: 15px;
+        font-weight: 600;
+    }
 }

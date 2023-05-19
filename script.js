@@ -1,30 +1,29 @@
  var arr = [
     {
-        "id": 5,
-        "Country": "Indonesia",
-        "name": "Tampaksiring, Bali, Indonesia",
-        "url": "https://a0.muscache.com/im/pictures/4a5c629b-9c92-450e-8d8f-995875798838.jpg?im_w=720",
-        "description": "Located just a 20-minute scooter ride from the vibrant centre of Ubud.",
-        "cost": "43201",
-        "title": "Entire cabin hosted by Eco Six Bali",
-        "heading": "Dome - Bamboo Villa in Eco Six Bali",
-        "urls": "https://a0.muscache.com/im/pictures/4a5c629b-9c92-450e-8d8f-995875798838.jpg?im_w=960",
-        "url1": "https://a0.muscache.com/im/pictures/08a9afde-e2f2-48aa-b8b0-a7e747318943.jpg?im_w=480",
-        "url2": "https://a0.muscache.com/im/pictures/b51f509a-9c94-4d1c-a31c-1a465e1670ac.jpg?im_w=480",
-        "url3": "https://a0.muscache.com/im/pictures/0295e1cd-09fe-448a-b837-7bf5ade3809c.jpg?im_w=480",
-        "url4": "https://a0.muscache.com/im/pictures/6d3f81b5-affa-4c13-8681-4081d2568be6.jpg?im_w=480",
-        "guestDetail": "4 guests2-bedrooms2-beds2-bathrooms",
-        "description1": "The Dome is a one bedroom bamboo villa built on two floors. Its ground floor houses an open air living room fitted with a dining area, a seating area and balinese style hammock.The living room has direct access to a spacious balinese style garden and the beautiful Santorini style infinity pool.Amenities in the living room include a projector with Netflix, Nespresso coffee machine and refrigerated minibar.The master bedroom on the upper floor is fitted with a king size bed, a walk-in wardrobe, air conditioning, an in-room bathtub from where our guests can enjoy the beautiful rice fields views and a balcony overlooking the famous volcano Mount Agung. The bedroom houses a modernly equipped bathroom."
-      },
+        "id":16,
+        "Country":"Thiland",
+        "name":"Balian Beach, Thiland",
+        "url":"https://a0.muscache.com/im/pictures/530437c7-98f3-4c0e-8de3-d990575c0a0f.jpg?im_w=720",
+        "description":"The Balian treehouse is only a 3 minute walk away from the beach.",
+        "cost":"43201","title":"Hut hosted by Made",
+        "heading":"BALIAN TREEHOUSE w beautiful pool",
+        "urls":"https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=960",
+        "url1":"https://a0.muscache.com/im/pictures/miso/Hosting-1016153/original/5e249106-66d9-4638-99aa-6b8fc38f3203.jpeg?im_w=720",
+        "url2":"https://a0.muscache.com/im/pictures/0b25f6b3-f215-4938-ac81-581eb3929047.jpg?im_w=720",
+        "url3":"https://a0.muscache.com/im/pictures/9833de62-35b7-41f2-8a24-0d9354150ea7.jpg?im_w=720",
+        "url4":"https://a0.muscache.com/im/pictures/de73abc2-5dc9-4962-ba32-5d28211cdde0.jpg?im_w=720",
+        "guestDetail":"4 guests2-bedrooms2-beds2-bathrooms",
+        "description1":"We have several hangouts in our garden, and our pool is beautiful lit in the evening and turquoise in the daytime just inviting you to jump in. Upstairs is the open living area. The lazy couch on the veranda is overlooking the palm trees (TREEHOUSE) our beautiful garden and pool and has some ocean view aswell. It's the perfect place to wake up and relax drinking your coffee or tea. You can enjoy a nice ocean breeze when you feel its too warm to be outside in the sun or just when you feel the need to be nicely lazy..Inside there is a big (180 x 240) daybed with mosquito net if you need it. Downstairs there is the bedroom, kitchenette, bathroom and a second veranda. We have a rain shower with hot water, there is a standing fan and AC in the bedroom. In the bedroom there is a Flatscreen TV with some channels and movies on demand. The TV has a USB plug so you could take your favo movies or series to watch. We also have a dvd player. We use Indihome fiber for the quickest internet in Bali, so you can stream and download.When arriving at his lovely and special village, you immediately feel all the good Bali has to offer you. Balian is a small surfer/relax village it feels like the older days in Bali.We build the house as green as possible with a lot of decoration found in the nature, like the driftwood from the beach. I put a lot of blood, sweat, fun and tears in building this house. We are always busy expanding and updating the house which has to be done living near the ocean!!Although Made and his wife come to clean everyday it is impossible to get this house sterile, due to the openness and wind and just...nature.So this is not a house for a hosophobic!Everything in the village is in walking distance, but if you would like to go for some sightseeing outside the village, you may want to rent a bike.Please, always wear helmets, not only for your own safety but also the Police will check this regularly.If you would like to go out for dinner:(Luckily) There are no DELI's, STARBUCKS or MACDONALDS in the village but we do have enough nice restaurant to choose from. BALIAN SEGARA, TOM's garden (TOMS SALAD!), Astana had the best burgers (and a lot of sports on TV), Pondok Pitaya, DEKI's, BALIAN beach warung, Gajah Mina, Bintang Balian, the market and others.The market is nearby and has plenty of nice local food for great prices.Ofcourse there is also the possibility to cook your a simple meal in the kitchenette.Feel free to pick your own fruit from the garden! (depending of the season we have coconuts, lemons, papayas, lemongrass, jackfruit, passionfruit and more to come)The area is really safe but we still have a big fire proof safe box were you can put your laptop and other belongings."
+    },
     ]
     console.log(arr) ;
 
     // arr = JSON.parse(localStorage.getItem("id")) || [] ;
-
     Shiva(arr) ;
     function Shiva(arr){
         document.getElementById("title").textContent = "" ;
         document.getElementById("images").textContent = "" ;
+        document.getElementById("discription").textContent = "" ;
         document.getElementById("right_title").textContent = "" ;
         
         arr.map((ele) => {
@@ -41,17 +40,17 @@
             var a1 = document.createElement("a") ;
             a1.textContent = ele.name ;
             a1.href = "#" ;
-
+            
             i1.appendChild(span1) ;
             span1.appendChild(a1) ;
-
+            
             var i2 = document.createElement("i") ;
             i2.className = "fa-solid fa-arrow-up-from-bracket share" ;
             var span2 = document.createElement("span") ;
             span2.textContent = "Share" ;
-
+            
             i2.appendChild(span2) ;
-
+            
             var i3 = document.createElement("i") ;
             i3.className = "fa-regular fa-heart share" ;
             var span3 = document.createElement("span") ;
@@ -84,6 +83,10 @@
 
             document.getElementById("images").append(d3,d4) ;
 
+            var p6 = document.createElement("p") ;
+            p6.textContent = ele.description1 ;
+            document.getElementById("discription").append(p6) ;
+
             // ========================proceed to payment ===========================
 
             var p = document.createElement("p") ;
@@ -114,7 +117,7 @@
                 document.getElementById("total").textContent = "" ;
                 var st = document.getElementById("date1").value ;
                 var end = document.getElementById("date2").value ;
-                console.log(end-st) ;
+                // console.log(end-st) ;
 
                 var p2 = document.createElement("p") ;
                 p2.textContent = "₹ "+ele.cost +" x ";
@@ -145,6 +148,15 @@
                     window.location.href = "payment.html" ;
                 }
                 count++ ;
+
+               var obj = {
+                    st : st ,
+                    end : end,
+                    Total : Total,
+                    nights : (end-st)
+                }
+                console.log(obj) ;
+                localStorage.setItem("obj",JSON.stringify(obj)) ;
             }
         })
     }
