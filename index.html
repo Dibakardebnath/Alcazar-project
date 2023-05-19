@@ -1,0 +1,598 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/b6693937f8.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'poppins','sans-serif';
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./background\ image.jpg");
+   background-size: cover;
+   background-position: center;
+}
+
+/* navbar */
+
+
+.container{
+    padding: 0 7%;
+}
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    /* padding-top: 22%;/ */
+}
+#travel{
+    /* border: 1px solid; */
+    justify-content: center;
+    align-items: center;
+}
+
+#travel li{
+    text-align: center;
+    /* border: 1px solid; */
+    list-style: none;
+    width: 50%;
+    margin-left: 350px;
+    margin-top: 20px;
+    color: #d7f9fa;
+    
+}
+
+/* .....................................search..................... */
+
+.search-bar{
+    background: #fff;
+    width: 70%;
+    height: 10vh;
+    margin: 110px 0px 30px 200px;
+   
+    padding: 10px 8px 10px 30px;
+    border-radius: 50px;
+    
+}
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.search-bar form button{
+    background: #fff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.search-bar form button img{
+    /* background-color: #1ca0e3; */
+    width: 35px;
+    margin-top: 7px;
+}
+.location-input{
+    flex: 1;
+}
+.search-bar form label{
+    font-weight: 600;
+}
+#searchbtn{
+ /* border: 1px solid; */
+ background-color: #1ca0e3;
+    width: 60px;
+    border: none;
+    color: white;
+} 
+ #serach-btn{
+ 
+    height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+}
+#btnn+i{
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    margin-right: 10px;
+   color: white;
+    width: 50px;
+    height: 7vh;
+    background-color: #1ca0e3;
+    border-radius: 50px;
+   
+
+}
+
+#animation{
+      /* border: 1px solid; */
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      margin-left: 90px;
+      gap: 50px;
+}
+#travel-img{
+    /* border: 1px solid; */
+    width: 70%;
+}
+#travel-img img{
+    width: 100%;
+}
+#read-div{
+    width: 460px;
+    padding: 20px 10px 10px 0px ;
+    /* border: 1px solid; */
+}
+#read-div>p{
+    line-height: 1.2;
+   margin-top: 20px;
+   margin-bottom: 30px;
+   color: #c1c6ce;
+}
+#readmore{
+    width: 90px;
+    height: 6vh;
+    border-radius: 30px;
+    background-color: #1ca0e3;
+    border: none;
+    color: white;
+}
+/* ............................. satisfied..................*/
+#satisfied{
+    width: 90%;
+}
+#satisfied img{
+    margin-top: 50px;
+    width: 95%;
+    margin-left: 80px;
+}
+
+
+
+
+
+
+
+
+
+/* ...........................................last-div......................... */
+
+#last-div{
+    /* border: 1px solid; */
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 0px;
+    margin-left: 60px;
+    /* margin-right: 10px; */
+    gap: 50px;
+    padding: 2%;
+}
+#last-div2{
+    display: flex;
+    gap: 10px;
+}
+
+#last-div3 p{
+    color: #b7bfce;
+}
+
+#last-div4 p{
+    color: #b7bfce;
+}
+
+#last-div1 hr{
+    color: #b7bfce;
+    width: 90%;
+    margin-right: 100px;
+
+}
+#last-p{
+    /* border: 1px solid; */
+    width: 91%;
+    color: #b7bfce;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+#last-div4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+/* ..................................footere............ */
+/* ......back and next button...... */
+#back{
+    width: 120px;
+    height:7vh;
+    border-radius: 20px;
+}
+#next{
+    width: 120px;
+    height:7vh;
+    border-radius: 20px;
+}
+
+/* ...........................sea-img........................... */
+#sea-img{
+  
+   /* border: 1px solid; */
+    min-height: 50vh;
+    width: 85%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./Banner.jpg");
+   
+    background-size: cover;
+   background-position: center;
+   margin-left: 87px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   padding-top: 100px;
+}
+#sea-img img{
+    width: 200px;
+   border-radius: 25px;
+}
+#sea-img1{
+    /* border: 1px solid; */
+    font-size: large;
+    width: 50%;
+    margin-top: -120px;
+    
+    text-align: center;
+}
+#sea-img1 p{
+    color: #66676b;
+    margin-top: 20px;
+}
+
+
+
+
+/* ..........tablet......... */
+/* @media only screen and (max-width: 768px)   {
+
+
+
+
+
+
+}
+
+
+/* ................mobile................. */
+/* @media only screen and (max-width: 414px)   { */
+
+
+
+
+ /*
+
+/* } */
+
+</style>
+</head>
+<body>
+
+   <div class="header">
+
+       <nav>
+       
+    </nav>
+    <div id="travel">
+          <h1>Travel around the world</h1>
+          <li>Trusted by 80 million Travelers. Aalcazar is the world's most comprehensive travel, flight and accommodation provider. very easy  to access on your smarttree and desktop</li>
+    </div>
+    <div class="container">
+       
+        <div class="search-bar">
+            <form id="search-btn">
+                <i  class="fa-solid fa-location-dot"></i>
+                <div class="location-input">
+                    <label style="margin-left: 14px;">Location</label>
+                    <input id="input" style="margin-left: 13px;" type="text" placeholder="Ciyt,destination, or hotel name">
+                    
+                </div>
+               
+                <div>
+                    <label>Check in</label>
+                    <input type="text" placeholder="Add date">
+                </div>
+                
+                <div>
+                    <label>Guest</label>
+                    <input  type="text" placeholder="Add Gust">
+                </div>
+               
+                <input id="btnn" style="text-decoration: none;" type="button" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+                
+            </form>
+        </div>
+    </div>
+   </div>
+
+   <h1 id="heading">Guide for your next vacation</h1>
+   <p id="desc1">Checkout this week's selction of popular products that might catch your eye and don't </p>
+   <div id="filter">
+       <p class="second" id="first">All</p>
+       <p class="second" id="second">Trending</p>
+       <p class="second" id="third">Popular</p>
+       <p class="second" id="four">Features</p>
+       <p class="second" id="five">Recommend</p>
+       <p class="second" id="six">Tour Package</p>
+   </div>
+   <div id="location">
+   </div>
+   <div id="page-list">
+       <button class="pg1" id="prev">Back Page</button>
+       <div id="butn">
+        <h3 id="page-number1">1</h3>
+        <h3 id="page-number2">2</h3>
+        <h3 id="page-number3">3</h3>
+        <h3 id="page-number4">4</h3>
+        <h3 id="page-number5">5</h3>
+       </div>
+      
+       <button class="pg" id="next">Next Page</button>
+   </div>
+   <div>
+   
+ <!--.............................................. anitmation...........................-->
+
+         <div id="animation">
+
+            <div id="travel-img">
+                <img src="https://images01.nicepagecdn.com/page/56/36/website-template-preview-56361.jpg" alt="">
+            </div>
+
+            <div id="read-div">
+                <h1>Safely Saved List</h1>
+                <p>Are you trying to copy text from a website that blocks y
+                    ou from selecting or right-clicking content? While it migh
+                    t seem impossible, there are several ways to copy text from any protected 
+                    website, even if you can't,This wikiHow guide right-click.
+                    </p>
+                    <button id="readmore">Read More</button>
+            </div>
+
+          
+
+            <div id="read-div">
+                <h1>Passenger Quick Pick</h1>
+                <p>Fill in passenger details now, from a website that blocks y
+                    ou from selecting or right-clicking content? While it migh
+                    t seem impossible, there are several ways to copy text from any protected 
+                    website, even if you can't right-click the page. 
+                    </p>
+                    <button id="readmore">Read More</button>
+            </div>
+            <div id="travel-img">
+                <img src="https://images01.nicepagecdn.com/page/51/08/website-template-preview-51088.jpg" alt="">
+            </div>
+  
+
+            <div id="travel-img">
+                <img src="https://n2f3m3x8.rocketcdn.me/wp-content/uploads/2018/12/lets-go-travel.jpg" alt="">
+            </div>
+
+            <div id="read-div">
+                <h1>Flight Price Alert</h1>
+                <p>Instant Notification You that blocks y
+                    ou from selecting or right-clicking content? While it migh
+                    t seem impossible, there are several ways to copy text from any protected 
+                    website, even if you can't right-click the will text from a website. 
+                    </p>
+                    <button id="readmore">Read More</button>
+            </div>
+           
+            
+            <div id="read-div">
+                <h1>Easy Reschedule</h1>
+                <p>No more chasing after the airline copy text from a website that blocks y
+                    ou from selecting or  While it migh
+                    t seem impossible, there are several ways to copy text from any protected 
+                    website, even if you can't right-click the page.right-clicking content?
+                    </p>
+                    <button id="readmore">Read More</button>
+            </div>
+            <div id="travel-img">
+                <img src="https://www.all-travel.com/images/thumbnails/travelrules-thumb.jpg" alt="">
+            </div>
+          
+
+            
+            <div id="travel-img">
+                <img src="https://multicity.blob.core.windows.net/multicity/SectionImages/AppWebViewIcons/commonallsections/TRAVEL-AGENTS-5.png" alt="">
+            </div>
+
+            <div id="read-div">
+                <h1>Stay Guarantee</h1>
+                <p>How to Claim StayGurantee from a website that blocks y
+                    ou from selecting or right-clicking content? While it migh
+                    t , there are several ways to copy text from any protected 
+                    website, even if you can't right-click the page. seem impossible
+                    </p>
+                    <button id="readmore">Read More</button>
+            </div>
+           
+         </div> 
+         <div id="satisfied">
+            <img src="./arror.jpg" alt="">
+          
+         </div>
+         
+
+         <div id="last-div">
+
+            <div id="last-div1">
+                <div id="last-div2">
+                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
+                     <div id="last-div3">
+                        <h2>Yogesh nath</h2>
+                        <p>Bloger Imidiatly</p>
+                     </div>
+                     <div id="last-div4">
+                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
+                         <p>3.4</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p id="last-p">For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
+                    , we’re asking </p>
+            </div>
+
+            <div id="last-div1">
+                <div id="last-div2">
+                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
+                     <div id="last-div3">
+                        <h2>Mandeep Ray</h2>
+                        <p>Bloger Imidiatly</p>
+                     </div>
+                     <div id="last-div4">
+                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
+                         <p>4.8</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p id="last-p">For over a decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
+                    , we’re asking</p>
+            </div>
+
+            <div id="last-div1">
+                <div id="last-div2">
+                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
+                     <div id="last-div3">
+                        <h2>Hitesh Sona</h2>
+                        <p>Indonesian</p>
+                     </div>
+                     <div id="last-div4">
+                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
+                         <p>4.4</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p id="last-p">Yo help everyone in the world learn how to do anything. Today
+                    , we’re asking that you join us. Any amount that you can contribute </p>
+            </div>
+
+            <div id="last-div1">
+                <div id="last-div2">
+                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
+                     <div id="last-div3">
+                        <h2>Shiva Verma</h2>
+                        <p>Rasian Tourists</p>
+                     </div>
+                     <div id="last-div4">
+                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
+                         <p>5.0</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p id="last-p">Everyone in the world learn how to do anything. Today
+                    , we’re asking that you join us. Any amount that you can contribute </p>
+            </div>
+
+            <div id="last-div1">
+                <div id="last-div2">
+                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
+                     <div id="last-div3">
+                        <h2>Dibakar Deb</h2>
+                        <p>Tripura Tourists</p>
+                     </div>
+                     <div id="last-div4">
+                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
+                         <p>4.8</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p id="last-p">The world learn how to do anything. Today
+                    , we’re asking that you join us. Any amount that you can contribute </p>
+            </div>
+
+            <div id="last-div1">
+                <div id="last-div2">
+                    <img style="width: 40px;" src="https://www.pngitem.com/pimgs/m/79-791921_male-profile-round-circle-users-profile-round-icon.png" alt="">
+                     <div id="last-div3">
+                        <h2>Rohit Kumar</h2>
+                        <p>Brunei Tourists</p>
+                     </div>
+                     <div id="last-div4">
+                        <img  style="width: 20px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="">
+                         <p>3.3</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p id="last-p"> Decade, we’ve been on a mission: to help everyone in the world learn how to do anything. Today
+                    , we’re asking that you join us. Any amount that you can contribute </p>
+            </div>
+
+         </div>
+          <!-- ........................sea image....................... -->
+          <div id="sea-img">
+                <div id="sea-img1">
+                    <h1>Set your price alert now</h1>
+                    <p>Get alerts when we find ticket prices that match your budget. Price 
+                        Alerts is available on the web aand the latest Traveloka App.
+                    </p>
+                </div>
+                <div>
+                 
+                </div>
+              
+            </div>
+
+         <!-- ................................footer............................... -->
+         <footer>
+           
+         </footer>
+        
+   </div>
+   
+
+<!-- <script></script> -->
+</body>
+</html>
+<script src="product.js" type="module">
+
+</script>
