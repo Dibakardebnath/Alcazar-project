@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(./Paybackground.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 10px;
+        }
+      
+        .otp-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* margin-top: 50px; */
+        }
+      
+        .otp-inputs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+      
+        .otp-inputs input {
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            text-align: center;
+            margin-right: 5px;
+            border: 2px solid #a6a2a2;
+            border-radius: 50%;
+        }
+      
+        .otp-inputs input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+      
+        .otp-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+      
+        .otp-button:hover {
+            background-color: #0069d9;
+        }
+      
+        #verify-btn {
+            background-color: #2196F3;
+            border: none;
+            color: aliceblue;
+        }
+      
+        #verifybox {
+            background-color: #2196F3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            border-radius: 5px;
+            height: 40px;
+        }
+      
+        #container {
+            background: #f8f8f8;
+            max-width: 360px;
+            margin: 80px auto;
+            height: auto;
+            padding: 35px;
+            padding-top: 70px;
+            border-radius: 5px;
+            position: relative;
+        }
+    </style>
+       <link rel="stylesheet" href="footer.css">
+       <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <nav>
+
+    </nav>
+    <div id="container">
+        <div>
+            <h3>
+                OTP is a six-digit numerical code sent in real time as SMS to your registered mobile number <span>*******98</span>
+            </h3>
+        </div>
+        <form action="">
+            <div class="otp-box">
+                <div class="otp-inputs">
+                    <input type="text" maxlength="1" pattern="[0-9]" />
+                    <input type="text" maxlength="1" pattern="[0-9]" />
+                    <input type="text" maxlength="1" pattern="[0-9]" />
+                    <input type="text" maxlength="1" pattern="[0-9]" />
+                    <input type="text" maxlength="1" pattern="[0-9]" /> 
+                    <input type="text" maxlength="1" pattern="[0-9]" />
+                </div>
+            </div> 
+            <div id="verifybox">
+                <button id="verify-btn" type="submit">VERIFY</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+
+           </footer>
+   
+</body>
+</html>
+
+ 
+<script type="module">
+
+import {nav,footer}from "./component/nav.js";
+document.querySelector("nav").innerHTML=nav()
+document.querySelector("footer").innerHTML=footer()
+
+    const otpInputs = document.querySelectorAll('.otp-inputs input');
+    const verifyBtn = document.querySelector('#verify-btn');
+
+  otpInputs.forEach((input, index) => {
+    input.addEventListener('input', (event) => {
+        if (event.target.value && index < otpInputs.length - 1) {
+            otpInputs[index + 1].focus();
+        } else if (!event.target.value && index > 0) {
+            otpInputs[index - 1].focus();
+        }
+    });
+});
+
+verifyBtn.addEventListener('click', () => {
+  event.preventDefault()
+    const otpValue = Array.from(otpInputs).map(input => input.value).join('');
+    if (otpValue === '') {
+        alert('Please enter the OTP');
+      
+    } else {
+      window.location.href="paysucc.html";
+        console.log("wwwwwwwww");
+    }
+});
+
+</script>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    
+ 
+    <title>bitpay</title>
+ 
+    <!-- <link rel="stylesheet" href="bitpay.css"> -->
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-image: url(./Paybackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #parent {
+    margin: 25px 120px 5px 120px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+  }
+  
+  #parent > div + div {
+    padding: 30px 100px 0 100px !important;
+  }
+  
+  h3 {
+    padding: 0;
+    margin: 0 0 8px;
+    font-weight: 550;
+    font-size: 25px;
+    color: #151b39;
+    font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  #parent div:nth-child(2) > p {
+    font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    color: rgba(21, 27, 57, .6);
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+  
+  label {
+    font-family: monospace;
+    font-size: 13px;
+    color: #2196f3;
+    margin-bottom: 5px;
+  }
+  
+  form > div:first-child {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px;
+  }
+  
+  form > div > span {
+    padding: 5px;
+    font-weight: 600;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  form > div > input {
+    padding: 5px;
+    border: none;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(21, 27, 57, .04);
+    font-family: Lato;
+    font-size: 16px;
+    color: #151b39;
+  }
+  
+  form div:nth-child(2) {
+    background-color: #2196f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #2196f3;
+    border: none;
+    color: #fff;
+  }
+  
+  button > a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #leftbox {
+    width: 70%;
+    padding: 37px;
+    padding-top: -10px;
+  }
+  
+  #leftbox img {
+    border-radius: 10px;
+    width: 100%;
+
+  }
+  
+  #myaddress {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px;
+    margin: 5px;
+    margin: bottom 10px;}
+
+   
+
+
+  </style>
+
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+ <nav>
+    
+    </nav>
+    <div id="parent">
+        <div id="leftbox">
+            <img style="border-radius: 10px;" src="https://1382778335.rsc.cdn77.org/wp-content/uploads/2020/09/BitPay-Expands-Wallet-App-Features-with-Wyre-Integration.jpg" alt="netmeds images">
+        </div>
+        <div>
+            <h3>Send Bitcoin/ USDT</h3>
+            <p>Fund it. Spent it. Live on Crypto.</p>
+            <div>
+                <label for="">Send USDT/BITCOIN TRC20  Address  </label>
+            </div>
+            <div id="myaddress">
+                
+             <p style="font-weight: 600;">TEJD8340FNXsfe444sjg42SD</p>
+                </div>
+            <div>
+                <label for=""> Withdrawal TRC20 Address</label>
+            </div>
+            
+            <form action="">
+                
+                <div>
+                
+                <input style="font-weight: 600;" type="text"; id="phone"; placeholder=" Enter your TRC20 Address"; >
+                </div>
+
+                <div>
+                    <button >
+                       <a id="otp" href="./paysucc.html">Pay Now</a> </button>
+                </div>
+                
+            </form>
+        
+        </div>
+
+    </div>
+   <footer>
+
+   </footer>
+</body>
+</html>
+
+<Script type="module">
+import {nav,footer}from "./component/nav.js";
+document.querySelector("nav").innerHTML=nav()
+document.querySelector("footer").innerHTML=footer()
+</Script>

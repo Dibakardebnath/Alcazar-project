@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+   
+    <style>
+        body {
+       
+            
+    background-image: url(./Paybackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 10px;
+    font-family: 'Poppins', sans-serif; 
+  
+        }
+        
+        .container {
+            text-align: center;
+            margin-top: 100px;
+            /* font-family: Arial, sans-serif; */
+            background-color: #f7f7f7;
+            background: #f8f8f8;
+             max-width: 360px;
+  margin: 80px auto;
+  height: auto;
+  padding: 35px;
+  padding-top: 20px;
+  border-radius: 5px;
+  position: relative;
+        }
+        
+        .success-icon {
+            font-size: 80px;
+            color: #4CAF50;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        p {
+            color: #777;
+        }
+        
+        .bounce-in {
+            animation: bounce-in 1.5s ease-in-out;
+        }
+        
+        @keyframes bounce-in {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: #2196F3;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .button:hover {
+            background-color: #2196F3;
+        }
+        
+        .logo {
+            display: block;
+            margin-top: 50px;
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+     <link rel="stylesheet" href="footer.css">
+     <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <nav>
+
+    </nav>
+    <div class="container">
+        <span class="success-icon">&#10004;</span>
+        <h1 class="bounce-in">Thank you for reaching out to us.</h1>
+        <p class="bounce-in"> We will arrange a callback shortly</p>
+        <p class="bounce-in">we are here to help. If you have any specific concerns or questions in the meantime, please feel free to let us know.</p>
+        <a class="button" href="./fakepay.html">Go to Home</a>
+        
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
+
+<script type="module">
+
+import {nav,footer}from "./component/nav.js";
+document.querySelector("nav").innerHTML=nav()
+document.querySelector("footer").innerHTML=footer()
+
+</script>
