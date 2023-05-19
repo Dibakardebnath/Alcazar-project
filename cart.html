@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b90a60688f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
     <title>Cart Page</title>
@@ -139,7 +141,7 @@ hr{
 }
 .left-side p{
     margin: auto;
-    font-size: 20px;
+    font-size: 15px;
 }
 .left-side div i{
     /* background-color: rgb(12, 117, 209); */
@@ -148,7 +150,7 @@ hr{
     font-size: 20px;
 }
 .left-side div span{
-    font-size: 20px;
+    font-size: 15px;
     /* background-color: white; */
     margin-left: 30px;
 }
@@ -191,14 +193,14 @@ hr{
     padding: 20px;
 }
 #right_box button{
-    font-size: 20px;
+    font-size: 15px;
     background-color: #209ee3;
     color: white;
     font-weight: 600;
     padding: 10px 20px 10px 20px;
     width: 100%;
     border-radius: 10px;
-    margin-top: 70px;
+    margin-top: 30px;
     cursor: pointer;
     margin-bottom: 20px;
 }
@@ -212,7 +214,7 @@ hr{
     display: flex;
     width: 30vh;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 #right_title i{
     margin: auto;
@@ -231,10 +233,10 @@ hr{
 #right_date input{
     font-size: 20px;
     padding: 10px;
-    width: 130px;
+    width: 110px;
     height: 4vh;
     border-radius: 10px;
-    margin: 30px 0 20px 15px;
+    margin: 10px 0 20px 15px;
     cursor: pointer;
 }
 #total{
@@ -943,6 +945,9 @@ hr{
 
 
 <script>
+    import {nav,footer}from "./component/nav.js";
+document.querySelector("nav").innerHTML=nav()
+document.querySelector("footer").innerHTML=footer()
     //  var arr = [
     // {
     //     "id":16,
