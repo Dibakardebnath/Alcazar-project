@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +7,6 @@
     <title>Home</title>
     <script src="https://kit.fontawesome.com/b6693937f8.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="index.css"> -->
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="product.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    font-family: 'Poppins', sans-serif;
-
+   font-family: 'poppins','sans-serif';
 }
 .header{
     min-height: 100vh;
@@ -30,9 +25,33 @@
    background-position: center;
 }
 
-/* navbar */
-
-
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 7%;
+}
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+.nav-link li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-link li a{
+    text-decoration: none;
+    color: #fff;
+}
+.Register{
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
 .container{
     padding: 0 7%;
 }
@@ -234,7 +253,86 @@
     margin-left: 20px;
 }
 /* ..................................footere............ */
-/* ......back and next button...... */
+
+footer{
+/* border: 1px solid; */
+width: 100%;
+height: 50vh;
+margin-top: 50px;
+background-color: #1ca0e3;
+
+}
+#foo{
+    /* border: 1px solid royalblue; */
+   display: flex;
+   justify-content: center;
+   align-self: auto;
+   margin-top: 50px;
+   background-color: #1ca0e3;
+}
+
+
+#footer1{
+    /* border: 1px solid; */
+    display: flex;
+   flex-direction: column;
+   width: 25%;
+   margin-top: 5px;
+   margin-left: 40px;
+}
+/* #footer1 p{
+    margin-top: 0px;
+} */
+#footer1 img{
+      /* margin-bottom: -50px; */
+      /* border: 1px solid; */
+    width: 50%;
+    height: 22vh;
+}
+#footer1 img+p{
+    line-height: 1.4;
+     margin-top: -20px;
+    color: #85dbfc;
+}
+#footer2{
+    display: flex;
+    margin-left: 300px;
+    padding: 50px;
+    gap: 50px;
+}
+
+#footer4{
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+#footer4 p{
+    color: #85dbfc;
+    margin-bottom: 8px;
+  
+}
+#footer21 h1{
+    color: wheat;
+}
+#foo-last{
+    /* border: 1px solid; */
+    width: 95%;
+    margin-top: 15px;
+    margin-left: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 92px;
+    padding-right: 90px;
+}
+#foo-last p{
+    color: wheat;
+}
+
+.last-hr{
+    width: 81%;
+    color:#57c5f3; 
+    margin-left: 120px;
+}
 #back{
     width: 120px;
     height:7vh;
@@ -253,7 +351,7 @@
     min-height: 50vh;
     width: 85%;
     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./Banner.jpg");
-   
+    /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./background\ image.jpg"); */
     background-size: cover;
    background-position: center;
    margin-left: 87px;
@@ -286,25 +384,118 @@
 
 
 /* ..........tablet......... */
-/* @media only screen and (max-width: 768px)   {
+@media only screen and (max-width: 1194px)   {
 
+    .nav-link{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .search-bar{
+    width:100%;
+    display: flex;
+    margin:auto;
+    margin-top: 100px;
+   }
+}
+@media only screen and (max-width: 970px) {
+   .search-bar{
+    width:100%;
+    display: flex;
+    margin: auto;
+   }
+}
 
+/* ................mobile................. */
+@media only screen and (max-width: 700px) {
 
+    .nav-link{
+        display: none;
+       /* grid-template-columns:repeat(2,1fr) ;
+        margin: auto;
+        width:70%;
+        margin-top:50px;
+        margin-left: -150px; */
+    }
+    .logo{
+        margin-top: 40px;
+    }
+    #travel {
+        width:100%;
+        margin: auto;
+    }
+    #travel li{
+        width:80%;
+        margin:auto ;
+    }
+    #one{
+        font-size:50pz ;
+        margin:auto ;
+        margin-bottom: 10px;
+    }
+    /* .location-input{
+        display: flex;
+        justify-content: space-between;
+        width:200%;
+        margin: auto;
+    } */
+    #customerName{
+        margin-top: -140px;
+    }
+    #input{
+        width:100%;
+    }
+    #animation{
+        display: grid;
+        grid-template-columns:repeat(1,1fr) ;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #travel-img{
+        width:80%;
+       margin-left: 5px; 
+       margin-right: 5px;
+    }
+    .para{
+        width:80%;
+       margin: 10px; 
+    }
+    #last-div{
+        display: grid;
+        grid-template-columns:repeat(1,1fr) ;
+        width:100%;
+        margin-left: 5px;
+        margin-right: 5px; 
+        margin-bottom: 10px;
+    }
+    #satisfied{
+        width: 80%;
+        margin-left: -50px;
+        margin-bottom: 10px;
+    }
+    #sea-img{
+        width: 95%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    #sea-img1 h1 {
+        width: 100%;
+        margin-top: 20px;
 
-
+    }
+    #footer2{
+        display: grid;
+        grid-template-columns:repeat(1,1fr) ;
+        margin: auto;
+        width:95%;
+    }
+    #get{
+        width: 100%;
+        margin-top: -50px;
+    }
 
 }
 
-
-/* ................mobile................. */
-/* @media only screen and (max-width: 414px)   { */
-
-
-
-
- /*
-
-/* } */
 
 </style>
 </head>
@@ -316,8 +507,8 @@
        
     </nav>
     <div id="travel">
-          <h1>Travel around the world</h1>
-          <li>Trusted by 80 million Travelers. Aalcazar is the world's most comprehensive travel, flight and accommodation provider. very easy  to access on your smarttree and desktop</li>
+          <h1 id="one" >Travel around the world</h1>
+          <li id="headdesc">Trusted by 80 million Travelers. Aalcazar is the world's most comprehensive travel, flight and accommodation provider. very easy  to access on your smarttree and desktop</li>
     </div>
     <div class="container">
        
@@ -367,9 +558,8 @@
         <h3 id="page-number2">2</h3>
         <h3 id="page-number3">3</h3>
         <h3 id="page-number4">4</h3>
-        <h3 id="page-number5">5</h3>
+        <!-- <h3 id="page-number5">5</h3> -->
        </div>
-      
        <button class="pg" id="next">Next Page</button>
    </div>
    <div>
@@ -384,7 +574,7 @@
 
             <div id="read-div">
                 <h1>Safely Saved List</h1>
-                <p>Are you trying to copy text from a website that blocks y
+                <p class="para">Are you trying to copy text from a website that blocks y
                     ou from selecting or right-clicking content? While it migh
                     t seem impossible, there are several ways to copy text from any protected 
                     website, even if you can't,This wikiHow guide right-click.
@@ -396,7 +586,7 @@
 
             <div id="read-div">
                 <h1>Passenger Quick Pick</h1>
-                <p>Fill in passenger details now, from a website that blocks y
+                <p class="para">Fill in passenger details now, from a website that blocks y
                     ou from selecting or right-clicking content? While it migh
                     t seem impossible, there are several ways to copy text from any protected 
                     website, even if you can't right-click the page. 
@@ -414,7 +604,7 @@
 
             <div id="read-div">
                 <h1>Flight Price Alert</h1>
-                <p>Instant Notification You that blocks y
+                <p class="para">Instant Notification You that blocks y
                     ou from selecting or right-clicking content? While it migh
                     t seem impossible, there are several ways to copy text from any protected 
                     website, even if you can't right-click the will text from a website. 
@@ -425,7 +615,7 @@
             
             <div id="read-div">
                 <h1>Easy Reschedule</h1>
-                <p>No more chasing after the airline copy text from a website that blocks y
+                <p class="para">No more chasing after the airline copy text from a website that blocks y
                     ou from selecting or  While it migh
                     t seem impossible, there are several ways to copy text from any protected 
                     website, even if you can't right-click the page.right-clicking content?
@@ -444,7 +634,7 @@
 
             <div id="read-div">
                 <h1>Stay Guarantee</h1>
-                <p>How to Claim StayGurantee from a website that blocks y
+                <p class="para">How to Claim StayGurantee from a website that blocks y
                     ou from selecting or right-clicking content? While it migh
                     t , there are several ways to copy text from any protected 
                     website, even if you can't right-click the page. seem impossible
@@ -574,7 +764,7 @@
           <div id="sea-img">
                 <div id="sea-img1">
                     <h1>Set your price alert now</h1>
-                    <p>Get alerts when we find ticket prices that match your budget. Price 
+                    <p id="get">Get alerts when we find ticket prices that match your budget. Price 
                         Alerts is available on the web aand the latest Traveloka App.
                     </p>
                 </div>

@@ -1,4 +1,3 @@
-
 import {nav,footer}from "./component/nav.js";
 document.querySelector("nav").innerHTML=nav()
 document.querySelector("footer").innerHTML=footer()
@@ -52,7 +51,6 @@ function display(data){
     })
 }
 function addfun(elem){
-    window.location.href="cart.html"
     localStorage.setItem("id",JSON.stringify(elem));
 }
 
@@ -204,14 +202,14 @@ const Fetch=async(page,limit=6)=>{
         document.getElementById("page-number2").style.backgroundColor=""
         document.getElementById("page-number3").style.backgroundColor=""
         document.getElementById("page-number4").style.backgroundColor=""
-        document.getElementById("page-number5").style.backgroundColor=""
+        // document.getElementById("page-number5").style.backgroundColor=""
        
        
         var pgno1=document.getElementById("page-number1");
         var pgno2=document.getElementById("page-number2");
         var pgno3=document.getElementById("page-number3");
         var pgno4=document.getElementById("page-number4");
-        var pgno5=document.getElementById("page-number5");
+        // var pgno5=document.getElementById("page-number5");
     
         if(page==1){
             pgno1.style.backgroundColor="rgb(19, 158, 212)"
@@ -225,9 +223,9 @@ const Fetch=async(page,limit=6)=>{
         if(page==4){
             pgno4.style.backgroundColor="rgb(19, 158, 212)"
         }
-        if(page==5){
-            pgno5.style.backgroundColor="rgb(19, 158, 212)"
-        }
+        // if(page==5){
+        //     pgno5.style.backgroundColor="rgb(19, 158, 212)"
+        // }
         
       
         
@@ -293,5 +291,3 @@ const Fetch=async(page,limit=6)=>{
    
     
     Fetch();
-
-  

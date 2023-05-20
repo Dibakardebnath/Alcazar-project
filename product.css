@@ -35,7 +35,7 @@
     margin-bottom: 10px;
 }
 img:hover{
-  
+    /* opacity: 70%; */
    transition: 500ms;
   -ms-transform: scale(1.1); 
   -webkit-transform: scale(1.1);
@@ -56,7 +56,7 @@ img:hover{
     width:80%;
     margin-bottom: 25px;
 }
-.pg{
+.pg {
     color: gray;
     border: 1px solid gray;
     border-radius: 50px;
@@ -144,4 +144,49 @@ p{
 .pg1:hover{
     background-color:rgb(19, 158, 212) ;
     color: white;
+}
+
+@media only screen and (max-width: 970px) {
+    #location{
+        display: grid;
+        grid-template-columns:repeat(2,1fr) ;
+        margin-left: 5px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #filter{
+        width:100%;
+        display: grid;
+        grid-template-columns:repeat(2,1fr) ;
+         margin: auto;
+         margin-left: -20px;
+         margin-bottom: 10px;
+    }
+    .second{
+        width: 100%;
+        text-align: center;
+    }
+    #first{
+        text-align: center;
+    }
+   
+    /* #location{
+        width:50%;
+        display: grid;
+        grid-template-columns:repeat(2,1fr) ;
+        gap: 50px;
+        margin: auto;
+    } */
+    #image{
+        width:140%;
+       margin-left: -40px; 
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    #location{
+        display: grid;
+        grid-template-columns:repeat(1,1fr) ;
+        margin-left: 5px;
+    }
 }
