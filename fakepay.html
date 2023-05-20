@@ -7,12 +7,13 @@
     <title>Payment Details</title>
     <style>
         body {
-            background-image: url(https://wallpapers.com/images/featured-full/travel-hd-background-axhrsecphqby11wk.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+            min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./background\ image.jpg");
+   background-size: cover;
+   background-position: center;
             margin: 0 10px;
-            display: flex;
-            justify-content: center;
+          
         }
         #big-box {
             width: 80%;
@@ -21,6 +22,7 @@
             justify-content: center;
             margin-top: 150px;
             border-radius: 6px;
+            margin: auto;
         }
 
         #container1 {
@@ -112,7 +114,7 @@
     padding: 10px;
 }
 
-#image img {
+#image3  {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -301,7 +303,7 @@
           
             <div id="package-detail"> 
                 <div id="image">
-                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-26300485/original/d037ba05-1237-4b00-9092-8fa71bada83e.jpeg?aki_policy=large" alt="">
+                <img id="image3" src="https://a0.muscache.com/im/pictures/miso/Hosting-26300485/original/d037ba05-1237-4b00-9092-8fa71bada83e.jpeg?aki_policy=large" alt="">
                 </div>
              
                 <div>
@@ -381,17 +383,18 @@
                 </div>
             </div>
         </div>
+       
      </div>
-<footer>
+    
 
-</footer>
+
 </body>
 </html>
 <script  type="module">
 
 import {nav,footer}from "./component/nav.js";
 document.querySelector("nav").innerHTML=nav()
-document.querySelector("footer").innerHTML=footer()
+
 
 
     document.getElementById("credit").addEventListener("click", ()=>
@@ -431,9 +434,9 @@ arr2.push(z2) ;
 displayarr11(arr2);
 function displayarr11(data) {
   data.map(elem => {
-     document.getElementById("INR").textContent ="₹ " +  elem.Total;
+     document.getElementById("INR").textContent ="₹" +elem.Total;
      document.getElementById("USDT").textContent ="$" +  Math.round(elem.Total/82.70);
-     document.getElementById("bitcoin").textContent = "&#50896" +  (elem.Total / 2219042).toFixed(4);
+     document.getElementById("bitcoin").textContent = "₿" +  (elem.Total / 2219042).toFixed(4);
 
   });
 }

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Payment Checkout Form</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="./background image.jpg">
 	<!-- <link rel="stylesheet" href="./payment.css"> -->
 
 	<style>
@@ -18,9 +18,11 @@
 }
 
 body {
-    background-image: url(./Paybackground.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./background\ image.jpg");
+   background-size: cover;
+   background-position: center;
     margin: 0 10px;
   }
   
@@ -160,9 +162,6 @@ body {
 </head>
 <body>
 
-<nav>
-
-</nav>
 
 <div class="wrapper">
   <div class="payment">
@@ -215,18 +214,14 @@ body {
 
 </div>
 
-<footer>
 
-</footer>
 </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 <script type="module">
 
-import {nav,footer}from "./component/nav.js";
-document.querySelector("nav").innerHTML=nav()
-document.querySelector("footer").innerHTML=footer()
+
 	// Function to clear all error messages
 	function clearErrors() {
 		$(".error").text("");

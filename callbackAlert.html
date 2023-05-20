@@ -9,10 +9,11 @@
     <style>
         body {
        
-            
-    background-image: url(./Paybackground.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+            min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./background\ image.jpg");
+   background-size: cover;
+   background-position: center;
     margin: 0 10px;
     font-family: 'Poppins', sans-serif; 
   
@@ -83,8 +84,7 @@
             margin-right: auto;
         }
     </style>
-     <link rel="stylesheet" href="footer.css">
-     <link rel="stylesheet" href="navbar.css">
+   
 </head>
 <body>
     <nav>
@@ -95,7 +95,7 @@
         <h1 class="bounce-in">Thank you for reaching out to us.</h1>
         <p class="bounce-in"> We will arrange a callback shortly</p>
         <p class="bounce-in">we are here to help. If you have any specific concerns or questions in the meantime, please feel free to let us know.</p>
-        <a class="button" href="./fakepay.html">Go to Home</a>
+        <a class="button" href="./index.html">Go to Home</a>
         
     </div>
     <footer>
@@ -106,8 +106,5 @@
 
 <script type="module">
 
-import {nav,footer}from "./component/nav.js";
-document.querySelector("nav").innerHTML=nav()
-document.querySelector("footer").innerHTML=footer()
 
 </script>

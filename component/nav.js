@@ -1,6 +1,6 @@
 function nav(){
     return `
-    <img src="./alcazar logo png.png" class="logo">
+    <img href="./index.html" src="./alcazar logo png.png" class="logo">
     <ul class="nav-link">
        <li><a href="#">Download App</a></li>
        <li><a href="#">Partner With Us</a></li>

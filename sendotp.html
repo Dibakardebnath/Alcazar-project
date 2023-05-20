@@ -7,9 +7,11 @@
     <title>Document</title>
     <style>
         body {
-            background-image: url(./Paybackground.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+            min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./background\ image.jpg");
+   background-size: cover;
+   background-position: center;
             margin: 0 10px;
         }
       
@@ -82,8 +84,8 @@
             position: relative;
         }
     </style>
-       <link rel="stylesheet" href="footer.css">
-       <link rel="stylesheet" href="navbar.css">
+       <!-- <link rel="stylesheet" href="footer.css"> -->
+       <!-- <link rel="stylesheet" href="navbar.css"> -->
 </head>
 <body>
     <nav>
@@ -92,7 +94,7 @@
     <div id="container">
         <div>
             <h3>
-                OTP is a six-digit numerical code sent in real time as SMS to your registered mobile number <span>*******98</span>
+                OTP is a six-digit numerical code sent in real time as SMS to your registered mobile number <span>***98</span>
             </h3>
         </div>
         <form action="">
@@ -122,9 +124,9 @@
  
 <script type="module">
 
-import {nav,footer}from "./component/nav.js";
-document.querySelector("nav").innerHTML=nav()
-document.querySelector("footer").innerHTML=footer()
+// import {nav,footer}from "./component/nav.js";
+// document.querySelector("nav").innerHTML=nav()
+// document.querySelector("footer").innerHTML=footer()
 
     const otpInputs = document.querySelectorAll('.otp-inputs input');
     const verifyBtn = document.querySelector('#verify-btn');

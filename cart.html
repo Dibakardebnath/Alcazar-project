@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b90a60688f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="footer.css">
+    <!-- <link rel="stylesheet" href="footer.css"> -->
     <link rel="stylesheet" href="navbar.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
@@ -105,32 +105,39 @@ hr{
 }
 #midContainer{
     /* background-color: red; */
+    /* border:1px solid; */
     display: flex;
-    width: 135vh;
+    width: 90%;
+    height:1000px;
     margin: auto;
 }
 #midContainer #left{
     width: 60%;
     height: 80vh;
 }
+#pmeet{
+    text-align: center;
+}
 #left >p{
     /* background-color: red; */
     font-size: 30px;
     font-weight: 600;
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .left-side{
     background-color: #f0efe9;
-    width: 50vh;
-    height: 55vh;
+    width: 400px;
+    height: 95vh;
     margin: auto;
-    padding: 50px;
+    padding: 30px;
 }
 .left-side > div{
     display: flex;
+    width: 100%;
+    /* border:1px solid; */
     margin-bottom: 20px;
 }
 .left-side img{
@@ -186,9 +193,9 @@ hr{
 #right_box{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     /* background-color: white; */
-    width: 60%;
+    width: 80%;
     margin: auto;
-    height: 50vh;
+    height: 450px;
     border-radius: 20px;
     padding: 20px;
 }
@@ -212,7 +219,7 @@ hr{
 }
 #right_title{
     display: flex;
-    width: 30vh;
+    /* width: 30vh; */
     margin: auto;
     margin-top: 30px;
 }
@@ -258,6 +265,14 @@ hr{
     margin-top: 40px;
     font-size: 15px;
     font-weight: 600;
+}
+
+nav{
+    background-color: red;
+    background: url(background\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./background\ image.jpg");
 }
 
 /* ========================= Media Query ====================== */
@@ -855,10 +870,97 @@ hr{
         font-weight: 600;
     }
 }
+
+/* footer start  */
+footer{
+
+width: 100%;
+height: 70vh;
+margin-top: 50px;
+background-color: #1ca0e3;
+
+}
+#foo{
+   
+   display: flex;
+   justify-content: center;
+   align-self: auto;
+   margin-top: 50px;
+   background-color: #1ca0e3;
+}
+
+
+#footer1{
+    
+    display: flex;
+   flex-direction: column;
+   width: 25%;
+   margin-top: 5px;
+   margin-left: 40px;
+}
+
+#footer1 img{
+     
+    width: 50%;
+    height: 22vh;
+}
+#footer1 img+p{
+    line-height: 1.4;
+     margin-top: -20px;
+    color: #85dbfc;
+}
+#footer2{
+    display: flex;
+    margin-left: 300px;
+    padding: 50px;
+    gap: 50px;
+}
+
+#footer4{
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+#footer4 p{
+    color: #85dbfc;
+    margin-bottom: 8px;
+  
+}
+#footer21 h1{
+    color: wheat;
+}
+#foo-last{
+   
+    width: 80%;
+    margin-top: 15px;
+    margin-left: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 92px;
+    padding-right: 90px;
+}
+#foo-last p{
+    color: wheat;
+}
+
+.last-hr{
+    width: 81%;
+    color:#57c5f3; 
+    margin-left: 120px;
+}
+
+/* footer :end  */
+
+.btnmssgHost{
+    margin-left: -20px;
+}
     </style>
 </head>
 <body>
+        <nav></nav>
+    
     <div id="container">
+        
         <div id="title">
             <p id="container_title_p">Plan City Adventures from a Surry Hills Balcony</p>
             <i class="fa-solid fa-star"><span>4.92 . 597 reviews<a href="#">Surry Hills, New South Wales, Australia</a></span></i>
@@ -884,7 +986,7 @@ hr{
     <hr>
     <div id="midContainer">
         <div id="left">
-            <p>Meet your Host</p>
+            <p id="pmeet">Meet your Host</p>
             <div class="left-side">
                 <div>
                     <p>Room in a home hosted by Bron</p>
@@ -897,7 +999,7 @@ hr{
                     <i class="fa-regular fa-face-smile"><span>Fun fact: I like cars and racing</span></i>
                 </div>
                 <div>
-                    <i class="fa-regular fa-clock"><span>I spend too much time in travel</span></i>
+                    <i class="fa-regular fa-clock"><span>I spend too much time</span></i>
                 </div>
                 <div>
                     <i class="fa-regular fa-face-smile-wink"><span>I always: Make friends</span></i>
@@ -910,7 +1012,7 @@ hr{
                 </p>
                 <a href="">Show more <span> ></span></a>
                 <div>
-                    <button>Message Host</button>
+                    <button class ="btnmssgHost">Message Host</button>
                 </div>
                 <hr>
                 <p id="last_p">To protect your payment, never transfer money or communicate outside of the Airbnb website or app.</p>
@@ -947,7 +1049,7 @@ hr{
 </html>
 
 
-<script>
+<script type="module">
     import {nav,footer}from "./component/nav.js";
 document.querySelector("nav").innerHTML=nav()
 document.querySelector("footer").innerHTML=footer()
